@@ -1,0 +1,56 @@
+{% extends 'base.html.twig.' %}
+{%  block title %} {{ article.title }}{% endblock %}
+{% block body %}
+    <br>
+
+    <div class="card mb-3" style="margin-left: 200px; margin-right: 360px">
+        <div class="form-group row float-sm-left">
+            <a href="{{ url('app_admini') }}" class="btn btn-link">
+                {{ 'Powrót do strony zarządzania'}}
+            </a>
+        </div>
+        <h3 class="card-header">{{ article.title }}</h3>
+        <div>
+            <br>
+            <h5 class="card-subtitle text-muted"> {{ '#' ~ article.id ~ ': ' ~ article.subtitle}} </h5>
+            <br>
+            {% if article.category %}
+                <span class="badge badge-info">{{ article.category.name }}</span>
+            {% endif %}
+            {% for tag in article.tag %}
+                <span class="badge badge-light">{{ tag.name }}</span>
+            {% endfor %}
+            <h6 class="card-title"> <span class="pl-2 article-details"> {{ 'dodano: ' ~ article.createdAt|date("d/m/Y") }} </span></h6>
+        </div>
+        <div class="card-body">
+            <p class="card-text"> {{ article.content }}</p>
+        </div>
+        <div class="card-footer text-muted">
+
+        </div>
+        <div class="col-sm-12">
+            <h3><i class="pr-3 fa fa-comment"></i>
+                <hr>
+                <h3>Komentarze ({{ article.comments|length }})</h3>
+                <hr>
+            </h3>
+        </div>
+                    {% for komentarz in article.comments %}
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="comment-container d-inline-block pl-3 align-top">
+                                    <p class="text-secondary">{{ '#' ~ komentarz.id }} </p>
+                                    <a href="{{ url('comment_delete', {'id': komentarz.id})}}" style="position:absolute; right: 50px"><button type="button" class="btn btn-info" >Usuń</button></a>
+                                          <p class="text-primary"> {{ komentarz.author.loginname }}</p>
+                                          <span class="comment"> {{ komentarz.content }}</span>
+                                    <br>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+{% endblock %}
+{% block body1 %}
+
+{% endblock %}

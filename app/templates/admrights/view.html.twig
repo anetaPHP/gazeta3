@@ -1,0 +1,66 @@
+{% extends 'base.html.twig.' %}
+{%  block title %} {{ article.title }}{% endblock %}
+{% block body %}
+    <br>
+
+    <div class="card mb-3" style="margin-left: 200px; margin-right: 360px">
+        <h3 class="card-header">{{ article.title }}</h3>
+        <div class="card-body">
+
+            {% for kat in article.category %}
+                <span class="badge badge-info">{{ kat.category }}</span> <!-- Tutaj sie znajda kategorie-->
+            {% endfor %}
+            {% for tag in article.tag %}
+                <span class="badge badge-light">{{ tag.name }}</span> <!-- Tutaj sie znajda tagi, do ktorych nalezy artykul-->
+            {% endfor %}
+            <h6 class="card-title"> <span class="pl-2 article-details"> {{ 'dodano: ' ~ article.createdAt|date("d/m/Y") }} </span></h6>
+
+            <h5 class="card-subtitle text-muted"> {{ article.id }} </h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text"> {{ article.subtitle }}</p>
+        </div>
+        <div class="card-footer text-muted">
+            <table style="max-width: max-content">
+                <tr>
+                    <th width="38%"><a href="#" class="card-link"> << Wcześniejszy artykuł </a></th>
+                    <th width="43%"><br><br> <button type="button" href="#" class="btn btn-primary disabled">Wszystkie artykuły</button></th>
+                    <th width="19%"><a href="#" class="card-link"> Następny artykuł >> </a></th>
+            </table>
+            <br>
+        </div>
+    </div>
+
+{% endblock %}
+{% block body1 %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="show-article-container p-3 mt-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3><i class="pr-3 fa fa-comment"></i>
+                                <h2>Komentarze ({{ article.comments|length }})</h2>
+                            </h3>
+                            <hr>
+                            <p> {{ comments }}</p>
+                            {% for komentarz in comments %}
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="comment-container d-inline-block pl-3 align-top">
+                                            <br>
+                                            <span class="comment"> {{ komentarz.content }}</span>
+                                            <p><button type="button" class="btn btn-success" href="{{ url('article_edit', {'id': artykul.id}) }}">Edytuj</button>
+                                                <button type="button" class="btn btn-info" href="{{ url('article_delete', {'id': artykul.id})}}">Usuń</button></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

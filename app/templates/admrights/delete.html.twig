@@ -1,0 +1,10 @@
+{% include 'default/_form_article.html.twig' with {
+    page_title: 'Usunięcie wpisu',
+    page_title_param: {'%id%': article.id},
+    attr: {
+        method: 'DELETE',
+        action: url('article_delete', {'id': article.id}),
+    },
+    back_to_list_path: 'app_admini',
+    submit_label: 'Usuń wpis',
+} %}

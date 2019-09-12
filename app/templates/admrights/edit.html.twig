@@ -1,0 +1,15 @@
+{% include 'default/_form_article.html.twig' with {
+    page_title: 'Edycja wpisu',
+    page_title_param: {'%id%': article.id},
+    attr: {
+        method: 'PUT',
+        action: url('article_edit', {'id': article.id}),
+    },
+    back_to_list_path: 'app_admini',
+    submit_label: 'Zatwierdż zmianę',
+} %}
+
+
+{% block after_javascripts %}
+    <script src="{{ asset('js/article_form.js') }}"></script>
+{% endblock %}
