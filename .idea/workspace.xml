@@ -103,11 +103,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-84" />
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding>
+                <element signature="e#34#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/public/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -162,6 +179,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
   </component>
   <component name="GithubDefaultAccount">
@@ -370,7 +388,20 @@
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
@@ -529,12 +560,12 @@
       <workItem from="1568097073406" duration="37162000" />
       <workItem from="1568188252023" duration="45702000" />
       <workItem from="1568268946853" duration="1634000" />
-      <workItem from="1568297175561" duration="1546000" />
+      <workItem from="1568297175561" duration="2827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="561360000" />
+    <option name="totallyTimeSpent" value="562641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,7 +593,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.6583893" visible="true" weight="0.28470254" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.6583893" visible="true" weight="0.407932" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.34161073" side_tool="true" weight="0.04249292" />
       <window_info anchor="bottom" id="Regex Tester" order="13" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.3286119" />
@@ -642,13 +673,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/register/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -795,16 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2406">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1025,6 +1039,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#34#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
