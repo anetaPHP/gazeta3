@@ -1,7 +1,6 @@
 <?php
 /**
- * ArticleController
- *
+ * ArticleController.
  */
 
 namespace App\Controller;
@@ -11,7 +10,6 @@ use App\Entity\Comment;
 use App\Form\CommentType;
 use App\Repository\ArticleRepository;
 use App\Repository\CommentRepository;
-use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -19,23 +17,26 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class ArticleController
- * @package App\Controller
+ * Class ArticleController.
  */
 class ArticleController extends AbstractController
 {
     /**
      * Action Homepage Articlelist.
      *
-     * @param Request $request
-     * @param ArticleRepository $repository
+     * @param Request            $request
+     * @param ArticleRepository  $repository
      * @param PaginatorInterface $paginator
+     *
      * @return Response
      *
      * @Route("/", name="app_stronastartowa")
      */
-    public function stronastartowa(Request $request, ArticleRepository $repository, PaginatorInterface $paginator): Response
-    {
+    public function stronastartowa(
+        Request $request,
+        PaginatorInterface $paginator,
+        ArticleRepository $repository
+    ): Response {
         $pagination = $paginator->paginate(
             $repository->queryAll(),
             $request->query->getInt('page', 1),
@@ -50,11 +51,13 @@ class ArticleController extends AbstractController
     /**
      * View Action Article as User with Paginator.
      *
-     * @param Article $article
-     * @param Request $request
-     * @param CommentRepository $repository
+     * @param Article            $article
+     * @param Request            $request
+     * @param CommentRepository  $repository
      * @param PaginatorInterface $paginator
+     *
      * @return Response
+     *
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -64,8 +67,12 @@ class ArticleController extends AbstractController
      *     requirements={"id": "[1-9]\d*"},
      * )
      */
-    public function view(Article $article, Request $request, CommentRepository $repository, PaginatorInterface $paginator): Response
-    {
+    public function view(
+        Article $article,
+        Request $request,
+        CommentRepository $repository,
+        PaginatorInterface $paginator
+    ): Response {
         $comment = new Comment();
         $form = $this->createForm(CommentType::class, $comment);
         $form->handleRequest($request);
@@ -85,16 +92,16 @@ class ArticleController extends AbstractController
             $repository->save($comment);
 
             $this->addFlash('success', 'Komentarz został dodany');
+
             return $this->redirectToRoute('app_stronastartowa');
         }
-
 
         return $this->render(
             'article/show.html.twig',
             [
                 'article' => $article,
                 'comments' => $comments,
-                'form' => $form->createView(),]
+                'form' => $form->createView(), ]
         );
     }
 }

@@ -1,23 +1,21 @@
 <?php
 /**
- * LocaleSubscriber PHPProjectSatlawa
+ * LocaleSubscriber PHPProjectSatlawa.
  */
 
 namespace App\Subscriber;
-
 
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
- * Class LocaleSubscriber for language change PL/EN
- * @package App\Subscriber
+ * Class LocaleSubscriber for language change PL/EN.
  */
 class LocaleSubscriber implements EventSubscriberInterface
 {
     /**
-     * Variable defaultLocale
+     * Variable defaultLocale.
      *
      * @var string
      */
@@ -25,6 +23,7 @@ class LocaleSubscriber implements EventSubscriberInterface
 
     /**
      * LocaleSubscriber constructor.
+     *
      * @param string $defaultLocale
      */
     public function __construct($defaultLocale = 'en')
@@ -33,7 +32,8 @@ class LocaleSubscriber implements EventSubscriberInterface
     }
 
     /**
-     * OnKernel Request
+     * OnKernel Request.
+     *
      * @param GetResponseEvent $event
      */
     public function onKernelRequest(GetResponseEvent $event)
@@ -55,6 +55,7 @@ class LocaleSubscriber implements EventSubscriberInterface
 
     /**
      * Get Subscribed Events.
+     *
      * @return array
      */
     public static function getSubscribedEvents()

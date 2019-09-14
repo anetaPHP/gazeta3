@@ -28,8 +28,8 @@ class ArticleType extends AbstractType
      *
      * @param FormBuilderInterface $builder The form builder
      * @param array $options The options
-     * @see FormTypeExtensionInterface::buildForm()
      *
+     * @see FormTypeExtensionInterface::buildForm()
      */
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -41,17 +41,21 @@ class ArticleType extends AbstractType
                 'required' => true,
                 'attr' => [
                     'class' => 'form-control',
-                    'max_length' => 200
-                ]
-            ])
+                    'max_length' => 200,
+                ],
+            ]
+        )
             ->add(
                 'subtitle',
                 TextType::class,
                 [
                     'label' => 'label.subtitle',
                     'required' => true,
-                    'attr' => ['class' => 'form-control', 'max_length' => 200],
-                ])
+                    'attr' => ['class' => 'form-control',
+                        'max_length' => 200,
+                    ],
+                ]
+            )
             ->add(
                 'category',
                 EntityType::class,
@@ -63,7 +67,8 @@ class ArticleType extends AbstractType
                     },
                     'placeholder' => 'label.choosecat',
                     'attr' => ['class' => 'form-control'],
-                ])
+                ]
+            )
             ->add(
                 'tag',
                 CollectionType::class,
@@ -74,8 +79,8 @@ class ArticleType extends AbstractType
                     'allow_delete' => true,
                     'required' => true,
                     'by_reference' => false,
-
-                ])
+                ]
+            )
             ->add(
                 'content',
                 TextareaType::class,
@@ -83,7 +88,8 @@ class ArticleType extends AbstractType
                     'label' => 'label.content',
                     'required' => true,
                     'attr' => ['class' => 'form-control', 'max_length' => 1000, 'cols' => '10', 'rows' => '10'],
-                ]);
+                ]
+            );
     }
 
     /**
@@ -95,7 +101,7 @@ class ArticleType extends AbstractType
     {
         $resolver->setDefaults([
             'label' => false,
-            'data_class' => Article::class
+            'data_class' => Article::class,
         ]);
     }
 

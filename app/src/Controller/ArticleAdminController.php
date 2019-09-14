@@ -25,7 +25,7 @@ use Symfony\Component\HttpFoundation\Request;
 class ArticleAdminController extends AbstractController
 {
     /**
-     * Stronaadmin page with paginator.
+     * Stronaadm page with paginator.
      *
      * @param Request $request
      * @param ArticleRepository $repository
@@ -33,7 +33,7 @@ class ArticleAdminController extends AbstractController
      * @return Response
      * @Route("/", name="app_admini")
      */
-    public function stronaadmin(Request $request, ArticleRepository $repository, PaginatorInterface $paginator): Response
+    public function stronaadm(Request $request, ArticleRepository $repository, PaginatorInterface $paginator): Response
     {
         $pags = $paginator->paginate(
             $repository->queryAll(),
@@ -141,7 +141,7 @@ class ArticleAdminController extends AbstractController
      *     requirements={"id": "[1-9]\d*"}
      *   )
      */
-    public function delete_article($id)
+    public function deleteArticle($id)
     {
         $comment = $this->getDoctrine()
             ->getRepository(Article::class)

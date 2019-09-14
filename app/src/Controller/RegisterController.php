@@ -1,6 +1,6 @@
 <?php
 /**
- * RegistrationController
+ * RegistrationController.
  */
 
 namespace App\Controller;
@@ -15,23 +15,26 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
- * Class RegisterController
- * @package App\Controller
+ * Class RegisterController.
  */
 class RegisterController extends Controller
 {
     /**
      * Registration Action for User.
      *
-     * @param Request $request
+     * @param Request                      $request
      * @param UserPasswordEncoderInterface $passwordEncoder
-     * @param ManagerRegistry $managerRegistry
+     * @param ManagerRegistry              $managerRegistry
+     *
      * @return Response
      *
      * @Route("/rejestracja", name="app_register")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, ManagerRegistry $managerRegistry): Response
-    {
+    public function register(
+        Request $request,
+        UserPasswordEncoderInterface $passwordEncoder,
+        ManagerRegistry $managerRegistry
+    ): Response {
         $user = new User();
         $form = $this->createForm(UserTypeType::class, $user);
         $form->handleRequest($request);

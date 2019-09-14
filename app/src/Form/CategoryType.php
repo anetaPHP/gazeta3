@@ -24,7 +24,8 @@ class CategoryType extends AbstractType
      * top most type. Type extensions can further modify the form.
      *
      * @param FormBuilderInterface $builder The form builder
-     * @param array $options The options
+     * @param array                $options The options
+     *
      * @see FormTypeExtensionInterface::buildForm()
      *
      */
@@ -37,8 +38,9 @@ class CategoryType extends AbstractType
                 'label' => 'label.category',
                 'required' => true,
                 'attr' => ['max_length' => 20, 'class' => 'form-control'],
-                'constraints' => [new NotBlank()]
-            ]);
+                'constraints' => [new NotBlank()],
+            ]
+        );
     }
 
     /**
@@ -50,7 +52,7 @@ class CategoryType extends AbstractType
     {
         $resolver->setDefaults([
             'label' => false,
-            'data_class' => Category::class
+            'data_class' => Category::class,
         ]);
     }
 

@@ -25,6 +25,7 @@ class CommentType extends AbstractType
      *
      * @param FormBuilderInterface $builder The form builder
      * @param array $options The options
+     *
      * @see FormTypeExtensionInterface::buildForm()
      *
      */
@@ -38,7 +39,8 @@ class CommentType extends AbstractType
                 'label' => false,
                 'attr' => ['class' => 'form-control', 'min_length' => 400],
                 //'constraints' => [new NotBlank()]
-            ]);
+            ]
+        );
     }
 
     /**
@@ -50,7 +52,7 @@ class CommentType extends AbstractType
     {
         $resolver->setDefaults([
             'label' => false,
-            'data_class' => Comment::class
+            'data_class' => Comment::class,
         ]);
     }
 

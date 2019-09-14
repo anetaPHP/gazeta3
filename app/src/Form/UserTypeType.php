@@ -26,6 +26,7 @@ class UserTypeType extends AbstractType
      *
      * @param FormBuilderInterface $builder The form builder
      * @param array $options The options
+     *
      * @see FormTypeExtensionInterface::buildForm()
      *
      */
@@ -33,10 +34,13 @@ class UserTypeType extends AbstractType
     {
         $builder->add(
             'loginname',
-            TextType::class, [
-            'translation_domain' => 'messages',
-            'label' => 'label.username',
-            'attr' => ['class' => 'form-control'],])
+            TextType::class,
+            [
+                'translation_domain' => 'messages',
+                'label' => 'label.username',
+                'attr' => ['class' => 'form-control'],
+            ]
+        )
             ->add(
                 'password',
                 RepeatedType::class,
@@ -45,7 +49,8 @@ class UserTypeType extends AbstractType
                     'translation_domain' => 'messages',
                     'first_options' => ['label' => 'label.password', 'attr' => ['class' => 'form-control']],
                     'second_options' => ['label' => 'label.reppassword', 'attr' => ['class' => 'form-control']],
-                ]);
+                ]
+            );
     }
 
     /**
@@ -57,7 +62,7 @@ class UserTypeType extends AbstractType
     {
         $resolver->setDefaults([
             'label' => false,
-            'data_class' => User::class
+            'data_class' => User::class,
         ]);
     }
 

@@ -1,0 +1,10 @@
+
+[1mFILE: src\Security\LoginFormAuthenticator.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 62 | [33mWARNING[0m | Line exceeds 120 characters; contains 124 characters
+----------------------------------------------------------------------
+
+Time: 240ms; Memory: 6MB
+

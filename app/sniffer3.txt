@@ -1,0 +1,41 @@
+
+[1mFILE: src\Controller\ArticleController.php[0m
+----------------------------------------------------------------------
+[1mFOUND 4 ERRORS AFFECTING 4 LINES[0m
+----------------------------------------------------------------------
+ 38 | [31mERROR[0m | [x] The closing parenthesis of a multi-line function
+    |       |     declaration must be on a new line
+ 39 | [31mERROR[0m | [x] The closing parenthesis and the opening brace of a
+    |       |     multi-line function declaration must be on the same
+    |       |     line
+ 74 | [31mERROR[0m | [x] The closing parenthesis of a multi-line function
+    |       |     declaration must be on a new line
+ 75 | [31mERROR[0m | [x] The closing parenthesis and the opening brace of a
+    |       |     multi-line function declaration must be on the same
+    |       |     line
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: src\Controller\CommentController.php[0m
+----------------------------------------------------------------------
+[1mFOUND 1 ERROR AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 44 | [31mERROR[0m | [x] The closing parenthesis and the opening brace of a
+    |       |     multi-line function declaration must be on the same
+    |       |     line
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: src\Security\LoginFormAuthenticator.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 62 | [33mWARNING[0m | Line exceeds 120 characters; contains 124 characters
+----------------------------------------------------------------------
+
+Time: 268ms; Memory: 6MB
+

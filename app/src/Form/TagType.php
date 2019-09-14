@@ -1,6 +1,6 @@
 <?php
 /**
- * TagTyp Form
+ * TagTyp Form.
  */
 
 namespace App\Form;
@@ -12,8 +12,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * Class TagType
- * @package App\Form
+ * Class TagType.
  */
 class TagType extends AbstractType
 {
@@ -25,19 +24,15 @@ class TagType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder
-            ->add(
-                'name',
-                TextType::class,
-                [
-                    'label' => false,
-                    'required' => true,
-                    'attr' => [
-                        'class' => 'form-control',
-                        'max_length' => 200
-                    ]
-                ]
-            );
+        $builder->add(
+            'name',
+            TextType::class,
+            [
+                'label' => false,
+                'required' => true,
+                'attr' => ['class' => 'form-control', 'max_length' => 200],
+            ]
+        );
     }
 
     /**
