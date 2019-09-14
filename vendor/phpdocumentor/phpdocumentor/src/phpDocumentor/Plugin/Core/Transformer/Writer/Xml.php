@@ -252,16 +252,19 @@ class Xml extends WriterAbstract implements Translatable
      */
     protected function createErrorEntry($error, $parse_errors)
     {
-        $marker_obj = new \DOMElement(strtolower($error->getSeverity()));
-        $parse_errors->appendChild($marker_obj);
+        if($error->getCode()!=='PPC:ERR-50000')
+        {
+            $marker_obj = new \DOMElement(strtolower($error->getSeverity()));
+            $parse_errors->appendChild($marker_obj);
 
-        $message = ($this->getTranslator())
-            ? vsprintf($this->getTranslator()->translate($error->getCode()), $error->getContext())
-            : $error->getCode();
+            $message = ($this->getTranslator())
+                ? vsprintf($this->getTranslator()->translate($error->getCode()), $error->getContext())
+                : $error->getCode();
 
-        $marker_obj->appendChild(new \DOMText($message));
-        $marker_obj->setAttribute('line', $error->getLine());
-        $marker_obj->setAttribute('code', $error->getCode());
+            $marker_obj->appendChild(new \DOMText($message));
+            $marker_obj->setAttribute('line', $error->getLine());
+            $marker_obj->setAttribute('code', $error->getCode());
+        }
     }
 
     /**
