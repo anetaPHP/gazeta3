@@ -2,6 +2,7 @@
 /**
  * Tag entity.
  */
+
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -9,6 +10,9 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * Class Tag
+ * @package App\Entity
+ *
  * @ORM\Entity(repositoryClass="App\Repository\TagRepository")
  * @ORM\Table(name="tag")
  */
@@ -25,19 +29,18 @@ class Tag
     private $id;
 
     /**
-     * Name
+     * Name.
      *
      * @ORM\Column(type="string", length=20)
      */
     private $name;
 
     /**
-     * Articles
+     * Articles.
      *
      * @ORM\ManyToMany(targetEntity="App\Entity\Article", mappedBy="tag")
      */
     private $articles;
-
 
     public function __construct()
     {
@@ -89,6 +92,7 @@ class Tag
      * Adder for Article.
      *
      * @param Article $article
+     *
      * @return Tag
      */
     public function addArticle(Article $article): self
@@ -105,6 +109,7 @@ class Tag
      * Remover for Article.
      *
      * @param Article $article
+     *
      * @return Tag
      */
     public function removeArticle(Article $article): self
@@ -116,6 +121,4 @@ class Tag
 
         return $this;
     }
-
-
 }

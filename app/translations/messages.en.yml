@@ -1,0 +1,38 @@
+label:
+  id: Id
+  title: Title
+  subtitle: Subtitle
+  content: Content
+  tag: Tags
+  name: Name
+  category: Category Name
+  act: Actions
+  story: Add a story
+  view: View
+  edit: Edit
+  delete: Delete
+  menucat: Category Menu
+  mainmenu: Go back to Mainmenu
+  homepage: Mainpage
+  adminpanel: Admin Panel
+  about: About
+  login: Login
+  logout: Logout
+  registartion: Registration
+  allarticle: Go bag to all articles
+  comments: Comments
+  comment: Comment
+  published: published at
+  save: Save
+  addtag: Add tag
+  deletetag: Delete tag
+  addcat: Add category
+  editstory: Edit story
+  addstory: Add Story
+  add: Add
+  username: Username
+  password: Password
+  reppassword: Repeat password
+  choosecat: Choose category
+  nocomment: There are no comments rights now. Add the first one!
+  admnocomment: No one has added a comment here.

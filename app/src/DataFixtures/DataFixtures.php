@@ -65,11 +65,11 @@ abstract class DataFixtures extends Fixture
      *           return $user;
      *      });
      *
-     * @param int      $count     Number of object to create
-     * @param string   $groupName Tag these created objects with this group name,
+     * @param int $count Number of object to create
+     * @param string $groupName Tag these created objects with this group name,
      *                            and use this later with getRandomReference(s)
      *                            to fetch only from this specific group
-     * @param callable $factory   Defines method of creating objects
+     * @param callable $factory Defines method of creating objects
      */
     protected function createMany(int $count, string $groupName, callable $factory): void
     {
@@ -100,7 +100,7 @@ abstract class DataFixtures extends Fixture
             $this->referencesIndex[$groupName] = [];
 
             foreach ($this->referenceRepository->getReferences() as $key => $ref) {
-                if (0 === strpos($key, $groupName.'_')) {
+                if (0 === strpos($key, $groupName . '_')) {
                     $this->referencesIndex[$groupName][] = $key;
                 }
             }
@@ -119,7 +119,7 @@ abstract class DataFixtures extends Fixture
      * Get array of objects references based on count.
      *
      * @param string $className Class name
-     * @param int    $count     Number of references
+     * @param int $count Number of references
      *
      * @return array Result
      */

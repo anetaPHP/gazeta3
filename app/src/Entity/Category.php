@@ -2,6 +2,7 @@
 /**
  * Category entity.
  */
+
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -9,11 +10,23 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * Class Category
+ * @package App\Entity
+ *
  * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
  * @ORM\Table(name="category")
  */
 class Category
 {
+    /**
+     * Use constants to define configuration options that rarely change instead
+     * of specifying them in app/config/config.yml.
+     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options
+     *
+     * @constant int NUMBER_OF_ITEMS
+     */
+    const NUMBER_OF_ITEMS = 7;
+
     /**
      * Primary key.
      *
@@ -25,14 +38,14 @@ class Category
     private $id;
 
     /**
-     * Name
+     * Name.
      *
      * @ORM\Column(type="string", length=40)
      */
     private $name;
 
     /**
-     * Article
+     * Article.
      *
      * @ORM\OneToMany(targetEntity="App\Entity\Article", mappedBy="category")
      */
@@ -67,6 +80,7 @@ class Category
      * Setter for Name.
      *
      * @param string $name
+     *
      * @return Category
      */
     public function setName(string $name): self
@@ -90,6 +104,7 @@ class Category
      * Adder for Article.
      *
      * @param Article $article
+     *
      * @return Category
      */
     public function addArticle(Article $article): self
@@ -106,6 +121,7 @@ class Category
      * Remover for Article.
      *
      * @param Article $article
+     *
      * @return Category
      */
     public function removeArticle(Article $article): self

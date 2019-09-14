@@ -1,37 +1,55 @@
 {% extends 'base.html.twig.' %}
-{%  block title %} {{ "Zarządzanie kategoriami" }}{% endblock %}
+{% block title %} {{ 'label.menucat'|trans }} {% endblock %}
 {% block body %}
     <br>
     <br>
-    <a href="{{ url('category_new') }}"><button type="button" class="btn btn-primary btn-lg btn-block" href="">Dodaj kategorię</button></a>
+    <a href="{{ url('category_new') }}">
+        <button type="button" class="btn btn-primary btn-lg btn-block" href="">{{ 'label.addcat'|trans }}</button>
+    </a>
     <br>
-    <a href="{{ url('app_admini') }}"><button type="button" class="btn btn-secondary" style="width: 33%">Powrót do strony zarządzania</button></a>
+    <a href="{{ url('app_admini') }}">
+        <button type="button" class="btn btn-secondary" style="width: 33%">{{ 'label.mainmenu'|trans }}</button>
+    </a>
     <br>
-    <table class="table table-hover" style="margin-left: 33%; margin-right: 50%">
-        <thead>
-        <tr>
-            <th scope="col" width="15px">ID</th>
-            <th scope="col" width="30px">Nazwa kategorii</th>
-            <th scope="col" width="150px">Akcje</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for kategoria in category %}
-            <tr class="table-light" >
-                <th scope="row">{{ kategoria.id }}</th>
-                <td>{{ kategoria.name }}</td>
-                <td>
-                    <a href="{{ url('category_edit', {'id': kategoria.id}) }}">
-                        <button type="button" class="btn btn-success" >Edytuj</button>
-                    </a>
-                    <a href="{{ url('category_delete', {'id': kategoria.id}) }}"><button type="button" class="btn btn-info" >Usuń</button>
-                    </a>
-                </td>
+    {% if categorypag is defined and categorypag|length %}
+
+        <div class="navigation text-center">
+            {{ knp_pagination_render(categorypag) }}
+        </div>
+        <table class="table table-hover" style="margin-left: 33%; margin-right: 50%">
+            <thead>
+            <tr>
+                <th scope="col" width="15px">{{ 'label.id'|trans }}</th>
+                <th scope="col" width="30px">{{ 'label.category'|trans }}</th>
+                <th scope="col" width="150px">{{ 'label.act'|trans }}</th>
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-    <br><br>
+            </thead>
+            <tbody>
+            {% for kategoria in categorypag %}
+                <tr class="table-light">
+                    <th scope="row">{{ kategoria.id }}</th>
+                    <td>{{ kategoria.name }}</td>
+                    <td>
+                        <a href="{{ url('category_edit', {'id': kategoria.id}) }}">
+                            <button type="button" class="btn btn-success">{{ 'label.edit'|trans }}</button>
+                        </a>
+                        <a href="{{ url('category_delete', {'id': kategoria.id}) }}">
+                            <button type="button" class="btn btn-info">{{ 'label.delete'|trans }}</button>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <br><br>
+        <div class="navigation text-center">
+            {{ knp_pagination_render(categorypag) }}
+        </div>
+    {% else %}
+        <p>
+            {{ 'Nie ma kategorii. / Ther are no categories' }}
+        </p>
+    {% endif %}
 {% endblock %}
 {% block body1 %}
 {% endblock %}

@@ -1,0 +1,40 @@
+label:
+  id: Id
+  title: Tytuł
+  subtitle: Podtytuł
+  content: Treść
+  tag: Tagi
+  name: Nazwa
+  category: Nazwa kategorii
+  act: Akcje
+  story: Dodaj opowieść
+  view: Wgląd
+  edit: Edytuj
+  delete: Usuń
+  menucat: Zarządzanie kategoriami
+  mainmenu: Powrót do strony zarządzania
+  homepage: Strona startowa
+  adminpanel: Panel admina
+  about: O stronie
+  login: Logowanie
+  logout: Wyloguj
+  registartion: Zarejestruj
+  allarticle: Wszystkie wpisy
+  comments: Komentarze
+  comment: Komentuj
+  published: dodano
+  save: Zapisz zmianę
+  addtag: Dodaj taga
+  deletetag: Usuń taga
+  addcat: Dodaj kategorię
+  editcat: Edytuj kategorię
+  deletecat: Usuń categorię
+  editstory: Edytuj wpis
+  addstory: Dodaj wpis
+  add: Dodaj
+  username: Nazwa użytkownika
+  password: Hasło
+  reppassword: Powtórz hasło
+  choosecat: Wybierz kategorię
+  nocomment: Do tego wpisu nie dodano jeszcze komentarzy. Dodaj pierwszy!
+  admnocomment: Do tego wpisu nie dodano komentarzy.

@@ -1,32 +1,39 @@
 {% extends 'base.html.twig.' %}
-{%  block title %} {{ "Zarządzanie kategoriami" }}{% endblock %}
+{% block title %} {{ "Zarządzanie kategoriami" }}{% endblock %}
 {% block body %}
     <br>
     <br>
-    <a href="{{ url('category_new') }}"><button type="button" class="btn btn-danger" style="width: 33%">Dodaj kategorię</button></a>
-    <a href="{{ url('category_edit', {'id': category.id})}}"> <button type="button" class="btn btn-success" style="width: 33%">Edytuj kategorię</button></a>
-    <a href=""> <button type="button" class="btn btn-info" style="width: 33%">Usuń kategorię</button></a>
+    <a href="{{ url('category_new') }}">
+        <button type="button" class="btn btn-danger" style="width: 33%">{{ 'label.addcat'|trans }}</button>
+    </a>
+    <a href="{{ url('category_edit', {'id': category.id}) }}">
+        <button type="button" class="btn btn-success" style="width: 33%">{{ 'label.editcat'|trans }}</button>
+    </a>
+    <a href="">
+        <button type="button" class="btn btn-info" style="width: 33%">{{ 'label.deletecat'|trans }}</button>
+    </a>
     <br>
     <br>
     <br>
     <table class="table table-hover" style="margin-left: 100px; margin-right: 300px">
         <thead>
         <tr>
-            <th scope="col" width="20px">ID</th>
-            <th scope="col" width="40px">Nazwa kategorii</th>
-            <th scope="col" width="200px">Akcje</th>
+            <th scope="col" width="20px">{{ 'label.id'|trans }}</th>
+            <th scope="col" width="40px">{{ 'label.category'|trans }}</th>
+            <th scope="col" width="200px">{{ 'label.act'|trans }}</th>
         </tr>
         </thead>
         <tbody>
         {% for kategoria in category %}
-            <tr class="table-light" >
+            <tr class="table-light">
                 <th scope="row">{{ kategoria.id }}</th>
                 <td>{{ kategoria.name }}</td>
                 <td>
                     <a href="{{ url('category_edit', {'id': category.id}) }}">
-                        <button type="button" class="btn btn-success" >Edytuj</button>
+                        <button type="button" class="btn btn-success">{{ 'label.edit'|trans }}</button>
                     </a>
-                    <a href="{{ url('category_delete', {'id': category.id})}}"><button type="button" class="btn btn-info" >Usuń</button>
+                    <a href="{{ url('category_delete', {'id': category.id}) }}">
+                        <button type="button" class="btn btn-info">{{ 'label.delete'|trans }}</button>
                     </a>
                 </td>
             </tr>

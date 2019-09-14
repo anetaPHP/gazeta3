@@ -2,6 +2,7 @@
 /**
  * Tag fixture.
  */
+
 namespace App\DataFixtures;
 
 use App\Entity\Tag;

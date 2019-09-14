@@ -1,4 +1,9 @@
 <?php
+/**
+ * CategoryController
+ * @author Aneta Satława
+ * @package App\Controller
+ */
 
 namespace App\Controller;
 
@@ -6,47 +11,53 @@ use App\Entity\Article;
 use App\Entity\Category;
 use App\Form\CategoryType;
 use App\Repository\CategoryRepository;
-use Doctrine\ORM\EntityManagerInterface;
-use http\QueryString;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
+
 /**
- * Class CategoryController.
+ * Class CategoryController
+ *
+ * @package App\Controller
  *
  * @Route("/admrights/category")
- */class CategoryController extends AbstractController
+ */
+class CategoryController extends AbstractController
 {
     /**
-     * Index action.
+     * Index CategoryMenu Action.
      *
-     * @param \App\Repository\CategoryRepository $repository Category repository
-     *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
+     * @param Request $request
+     * @param CategoryRepository $repository
+     * @param PaginatorInterface $paginator
+     * @return Response
      *
      * @Route(
      *     "/",
      *     name="category_index",
      * )
      */
-    public function index(CategoryRepository $repository): Response
+    public function index(Request $request, CategoryRepository $repository, PaginatorInterface $paginator): Response
     {
+        $categorypag = $paginator->paginate(
+            $repository->queryAll(),
+            $request->query->getInt('page', 1),
+            Category::NUMBER_OF_ITEMS
+        );
         return $this->render(
             'category/index.html.twig',
-            ['category' => $repository->findAllCategoryById()]
+            ['categorypag' => $categorypag]
         );
     }
 
     /**
-     * New action.
+     * New Action Category.
      *
-     * @param \Symfony\Component\HttpFoundation\Request $request HTTP request
-     * @param \App\Repository\CategoryRepository $repository Category repository
-     *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
-     *
+     * @param Request $request
+     * @param CategoryRepository $repository
+     * @return Response
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -63,11 +74,10 @@ use Symfony\Component\HttpFoundation\Request;
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
-
             $repository->save($category);
 
             $this->addFlash('success', 'Kategoria została dodana');
+
             return $this->redirectToRoute('category_new');
         }
 
@@ -78,14 +88,12 @@ use Symfony\Component\HttpFoundation\Request;
     }
 
     /**
-     * Edit action.
+     * Edit Action Category.
      *
-     * @param \Symfony\Component\HttpFoundation\Request $request    HTTP request
-     * @param \App\Entity\Category                          $category       Category entity
-     * @param \App\Repository\CategoryRepository            $repository Category repository
-     *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
-     *
+     * @param Request $request
+     * @param Category $category
+     * @param CategoryRepository $repository
+     * @return Response
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -118,54 +126,35 @@ use Symfony\Component\HttpFoundation\Request;
         );
     }
 
+
     /**
-     * Delete action.
      *
-     * @param \Symfony\Component\HttpFoundation\Request $request    HTTP request
-     * @param \App\Entity\Category                     $category   Category entity
-     * @param \App\Repository\CategoryRepository        $repository Category repository
+     * Delete Action Category.
      *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      *
-     * @throws \Doctrine\ORM\ORMException
-     * @throws \Doctrine\ORM\OptimisticLockException
-     *
-     * @Route(
-     *     "/{id}/delete",
-     *     methods={"GET", "DELETE"},
-     *     requirements={"id": "[1-9]\d*"},
+     * @Route("/{id}/delete",
      *     name="category_delete",
-     * )
+     *     requirements={"id": "[1-9]\d*"}
+     *   )
      */
-    public function delete(Request $request, Category $category, CategoryRepository $repository): Response
+    public function delete_category($id)
     {
-        $form = $this->createForm(CategoryType::class, $category, ['method' => 'DELETE']);
-        $form->handleRequest($request);
+        $category = $this->getDoctrine()
+            ->getRepository(Category::class)
+            ->find($id);
+        $em = $this->getDoctrine()->getManager();
 
-        if ($request->isMethod('DELETE') && !$form->isSubmitted()) {
-            $form->submit($request->request->get($form->getName()));
-        }
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $repository->delete($category);
-
-
+        if ($category->getArticle()->count() == 0) {
+            $em->remove($category);
+            $em->flush();
             $this->addFlash('success', 'Kategoria została usunięta!');
-
-            return $this->redirectToRoute('category_index');
+            return $this->redirectToRoute("category_index");
+        } else {
+            $this->addFlash('danger', 'Kategoria jest jeszcze używana. Można usuwać tylko puste kategorie!');
+            return $this->redirectToRoute("category_index");
         }
 
-        return $this->render(
-            'category/deletecategory.html.twig',
-            [
-                'form' => $form->createView(),
-                'category' => $category,
-            ]
-        );
     }
-
-
-
-
 }
-

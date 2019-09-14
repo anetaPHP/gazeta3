@@ -1,37 +1,64 @@
 {% extends 'base.html.twig.' %}
-{%  block title %} {{ "Strona Admina" }}{% endblock %}
+{% block title %} {{ "Strona Admina" }}{% endblock %}
 {% block body %}
     <br>
-    <a href="{{ path('category_index') }}"><button type="button" class="btn btn-primary btn-lg btn-block"> Zarządzanie kategoriami</button></a>
+    <a href="{{ path('category_index') }}">
+        <button type="button" class="btn btn-primary btn-lg btn-block"> {{ 'label.menucat'|trans }}</button>
+    </a>
     <br>
-    <a href="{{ path('article_new') }}"><button type="button" class="btn btn-danger" style="margin-left: 100px; width: 49%">Dodaj opowieść</button></a>
-    <br>
-    <table class="table table-hover" style="margin-left: 100px; margin-right: 300px">
-    <thead>
-    <tr>
-        <th scope="col" width="20px">ID</th>
-        <th scope="col" width="400px">Tytuł</th>
-        <th scope="col" width="40px">Kategoria</th>
-        <th scope="col" width="200px">Akcje</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for artykul in article %}
-    <tr class="table-light" >
-        <th scope="row">{{ artykul.id }}</th>
-        <td>{{ artykul.title }}</td>
-        <td> {{ artykul.category.name }} </td>
-        <td>
-            <a href="{{ url('articleview_show', {'id': artykul.id})}}"><button type="button" class="btn btn-primary" >Wgląd</button></a>
-            <a href="{{ url('article_edit', {'id': artykul.id}) }}">
-            <button type="button" class="btn btn-success" >Edytuj</button>
-            </a>
-            <a href="{{ url('article_delete', {'id': artykul.id})}}"><button type="button" class="btn btn-info" >Usuń</button></a>
-        </td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+    <a href="{{ path('article_new') }}">
+        <button type="button" class="btn btn-danger"
+                style="margin-left: 100px; width: 49%">{{ 'label.story'|trans }}</button>
+    </a>
+    <br><br>
+    {% if pagination is defined and pagination|length %}
+
+        <div class="navigation text-center">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+
+        <table class="table table-striped" style="margin-left: 100px; margin-right: 300px">
+            <thead>
+            <tr>
+                <th scope="col" width="20px">{{ knp_pagination_sortable(pagination, 'label.id'|trans, 't.id') }}</th>
+                <th scope="col"
+                    width="400px">{{ knp_pagination_sortable(pagination, 'label.title'|trans, 't.title') }}</th>
+                <th scope="col"
+                    width="40px">{{ knp_pagination_sortable(pagination, 'label.category'|trans, 't.category') }}</th>
+                <th scope="col" width="200px">{{ 'label.act'|trans }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for artykul in pagination %}
+                <tr class="table-light">
+                    <th scope="row">{{ artykul.id }}</th>
+                    <td>{{ artykul.title }}</td>
+                    <td> {{ artykul.category.name }} </td>
+                    <td>
+                        <a href="{{ url('articleview_show', {'id': artykul.id}) }}">
+                            <button type="button" class="btn btn-primary">{{ 'label.view'|trans }}</button>
+                        </a>
+                        <a href="{{ url('article_edit', {'id': artykul.id}) }}">
+                            <button type="button" class="btn btn-success">{{ 'label.edit'|trans }}</button>
+                        </a>
+                        <a href="{{ url('article_delete', {'id': artykul.id}) }}">
+                            <button type="button" class="btn btn-info">{{ 'label.delete'|trans }}</button>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="navigation text-center">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+
+    {% else %}
+        <p>
+            {{ Pagination }}
+        </p>
+    {% endif %}
     <br><br>
 {% endblock %}
 {% block body1 %}

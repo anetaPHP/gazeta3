@@ -6,18 +6,12 @@
 namespace App\Form;
 
 use App\Entity\User;
-use Doctrine\DBAL\Types\DateType;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\FormTypeInterface;
 
 /**
  * Class CategoryType.
@@ -39,15 +33,18 @@ class UserTypeType extends AbstractType
     {
         $builder->add(
             'loginname',
-            TextType::class, ['label' => 'Nazwa użytkownika: ',
-                'attr'=> ['class'=> 'form-control']])
+            TextType::class, [
+                'translation_domain' => 'messages',
+                'label' => 'label.username',
+                'attr' => ['class' => 'form-control'], ])
             ->add(
             'password',
             RepeatedType::class,
             [
                 'type' => PasswordType::class,
-                'first_options'  => ['label' => 'Hasło:', 'attr'=> ['class'=> 'form-control'] ],
-                'second_options'  => ['label' => 'Powtórz hasło:', 'attr'=> ['class'=> 'form-control']]
+                'translation_domain' => 'messages',
+                'first_options' => ['label' => 'label.password', 'attr' => ['class' => 'form-control']],
+                'second_options' => ['label' => 'label.reppassword', 'attr' => ['class' => 'form-control']],
             ]);
     }
 
@@ -58,7 +55,10 @@ class UserTypeType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults(['data_class' => User::class]);
+        $resolver->setDefaults([
+            'label' => false,
+            'data_class' => User::class
+        ]);
     }
 
     /**
@@ -74,4 +74,3 @@ class UserTypeType extends AbstractType
         return 'user';
     }
 }
-

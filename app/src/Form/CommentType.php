@@ -6,16 +6,11 @@
 namespace App\Form;
 
 use App\Entity\Comment;
-use App\Entity\Category;
-use Doctrine\DBAL\Types\DateType;
-use phpDocumentor\Descriptor\Interfaces\ChildInterface;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 /**
  * Class CommentType.
@@ -41,9 +36,9 @@ class CommentType extends AbstractType
             [
                 'required' => true,
                 'label' => false,
-                'attr' => [ 'class'=> 'form-control', 'min_length' => 400,],
+                'attr' => ['class' => 'form-control', 'min_length' => 400],
+                //'constraints' => [new NotBlank()]
             ]);
-
     }
 
     /**
@@ -53,7 +48,10 @@ class CommentType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults(['data_class' => Comment::class]);
+        $resolver->setDefaults([
+            'label' => false,
+            'data_class' => Comment::class
+        ]);
     }
 
     /**
@@ -69,4 +67,3 @@ class CommentType extends AbstractType
         return 'comment';
     }
 }
-

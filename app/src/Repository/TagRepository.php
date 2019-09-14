@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * TagRepository ProjektPHPSatlawa
+ */
+
 namespace App\Repository;
 
 use App\Entity\Tag;
@@ -7,6 +11,9 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
+ * Class TagRepository
+ * @package App\Repository
+ *
  * @method Tag|null find($id, $lockMode = null, $lockVersion = null)
  * @method Tag|null findOneBy(array $criteria, array $orderBy = null)
  * @method Tag[]    findAll()

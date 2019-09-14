@@ -1,15 +1,20 @@
 {% include 'default/_form_article.html.twig' with {
-        page_title: 'Dodanie wpisu',
-        attr: {
-            method: 'POST',
-            action: url('article_new')
-        },
-        back_to_list_path: 'app_admini',
-        submit_label: 'Dodaj nowy',
+    page_title: 'label.addstory' ,
+    attr: {
+        method: 'POST',
+        action: url('article_new')
+    },
+    back_to_list_path: 'app_admini',
+    submit_label: 'label.add'|trans ,
 } %}
 
 
 
 {% block after_javascripts %}
     <script src="{{ asset('js/article_form.js') }}"></script>
+    <script>
+        jQuery(document).ready(function () {
+            new initCollection("{{ 'label.add'|trans }}", "{{ 'label.delete'|trans }}");
+        });
+    </script>
 {% endblock %}

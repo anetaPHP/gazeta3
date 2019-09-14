@@ -1,10 +1,10 @@
 {% include 'default/_form.html.twig' with {
-    page_title: 'Edycja kategorii',
+    page_title:  'label.editcat',
     page_title_param: {'%id%': category.id},
     attr: {
         method: 'PUT',
         action: url('category_edit', {'id': category.id}),
     },
     back_to_list_path: 'category_index',
-    submit_label: 'Edytuj',
+    submit_label:  'label.edit'|trans ,
 } %}

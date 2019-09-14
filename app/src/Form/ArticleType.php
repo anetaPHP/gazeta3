@@ -7,11 +7,8 @@ namespace App\Form;
 
 use App\Entity\Article;
 use App\Entity\Category;
-use Doctrine\DBAL\Types\DateType;
-use phpDocumentor\Reflection\DocBlock\Type\Collection;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -40,56 +37,54 @@ class ArticleType extends AbstractType
             'title',
             TextType::class,
             [
-                'label' => ' Tytuł:',
+                'label' => 'label.title',
                 'required' => true,
-                'attr' => [ 'class'=> 'form-control', 'max_length' => 200],
+                'attr' => ['class' => 'form-control', 'max_length' => 200],
             ])
 
             ->add(
                 'subtitle',
                 TextType::class,
                 [
-                    'label' => 'Podtytuł',
+                    'label' => 'label.subtitle',
                     'required' => true,
-                    'attr' => ['class'=> 'form-control', 'max_length' => 200 ],
+                    'attr' => ['class' => 'form-control', 'max_length' => 200],
                 ])
 
             ->add(
                 'category',
                 EntityType::class,
                 [
-                    'class'=> Category::class,
-                    'label' => ' Kategoria:',
-                    'choice_label'=> function(Category $category){
-                        return sprintf('%d. %s', $category->getId(), $category->getName());
+                    'class' => Category::class,
+                    'label' => 'label.category',
+                    'choice_label' => function (Category $category) {
+                        return sprintf(' %s', $category->getName());
                     },
-                    'placeholder' => 'Wybierz kategorię',
-                    'attr'=> ['class'=> 'form-control'],
-
+                    'placeholder' => 'label.choosecat',
+                    'attr' => ['class' => 'form-control'],
                 ])
 
             ->add(
                 'tag',
                 CollectionType::class,
                 [
-                    'label' => 'Tagi',
+                    'label' => false,
                     'entry_type' => TagType::class,
                     'allow_add' => true,
                     'allow_delete' => true,
                     'required' => true,
                     'by_reference' => false,
-                    'attr' => ['class'=> 'form-control', 'label'=>true],
+
                 ])
 
                 ->add(
                 'content',
                 TextareaType::class,
             [
-                'label' => ' Treść:',
+                'label' => 'label.content',
                 'required' => true,
-                'attr' => ['class'=> 'form-control', 'max_length' => 1000, 'cols'=> '10', 'rows'=>'10' ],
+                'attr' => ['class' => 'form-control', 'max_length' => 1000, 'cols' => '10', 'rows' => '10'],
             ]);
-
     }
 
     /**
@@ -99,7 +94,10 @@ class ArticleType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults(['data_class' => Article::class]);
+        $resolver->setDefaults([
+            'label' => false,
+            'data_class' => Article::class
+        ]);
     }
 
     /**
@@ -115,4 +113,3 @@ class ArticleType extends AbstractType
         return 'article';
     }
 }
-

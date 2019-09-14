@@ -2,19 +2,32 @@
 /**
  * Article entity.
  */
+
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
+ * Class Article
+ * @package App\Entity
+ * *
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  * @ORM\Table(name="article")
  */
 class Article
 {
+    /**
+     * Use constants to define configuration options that rarely change instead
+     * of specifying them in app/config/config.yml.
+     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options
+     *
+     * @constant int NUMBER_OF_ITEMS
+     */
+    const NUMBER_OF_ITEMS = 10;
 
     /**
      * Primary key.
@@ -32,7 +45,9 @@ class Article
      *
      * @var string
      *
-     * @ORM\Column(type="string", length=40)
+     * @ORM\Column(type="string", length=40)*
+     *
+     * @Assert\NotBlank()
      */
     private $title;
 
@@ -41,6 +56,7 @@ class Article
      *
      * @var string
      * @ORM\Column(type="string", length=180, nullable=true)
+     * @Assert\NotBlank()
      */
     private $subtitle;
 
@@ -62,8 +78,6 @@ class Article
      */
     private $slug;
 
-
-
     /**
      * User.
      *
@@ -74,31 +88,34 @@ class Article
     private $user;
 
     /**
-     * Category
+     * Category.
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="article")
      * @ORM\JoinColumn(nullable=true, onDelete="CASCADE")
+     *
      */
     private $category;
 
     /**
-     * Tag
+     * Tag.
      *
      * @ORM\ManyToMany(targetEntity="App\Entity\Tag", inversedBy="articles" ,cascade={"persist"})
      */
     private $tag;
 
     /**
-     * Comments
+     * Comments.
      *
      * @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article", orphanRemoval=true)
      */
     private $comments;
 
     /**
-     * Content
+     * Content.
      *
      * @ORM\Column(type="text")
+     *
+     * @Assert\NotBlank()
      */
     private $content;
 
@@ -145,7 +162,6 @@ class Article
      *
      * @return string|null Subtitle
      */
-
     public function getSubtitle(): ?string
     {
         return $this->subtitle;
@@ -162,7 +178,6 @@ class Article
 
         return $this;
     }
-
 
     /**
      * Getter for Id.
@@ -191,7 +206,6 @@ class Article
      *
      * @return string|null Slug
      */
-
     public function getSlug(): ?string
     {
         return $this->slug;
@@ -221,10 +235,11 @@ class Article
 
     /**
      * Setter for User.
+     *
      * @param User|null $user
+     *
      * @return Article
      */
-
     public function setUser(?User $user): self
     {
         $this->user = $user;
@@ -246,6 +261,7 @@ class Article
      * Setter for Category.
      *
      * @param Category|null $category
+     *
      * @return Article
      */
     public function setCategory(?Category $category): self
@@ -266,9 +282,10 @@ class Article
     }
 
     /**
-     * Adder for Tag
+     * Adder for Tag.
      *
      * @param Tag $tag
+     *
      * @return Article
      */
     public function addTag(Tag $tag): self
@@ -284,6 +301,7 @@ class Article
      * Remover for Tag.
      *
      * @param Tag $tag
+     *
      * @return Article
      */
     public function removeTag(Tag $tag): self
@@ -309,6 +327,7 @@ class Article
      * Adder for Comments.
      *
      * @param Comment $comment
+     *
      * @return Article
      */
     public function addComment(Comment $comment): self
@@ -325,6 +344,7 @@ class Article
      * Remover for Comments.
      *
      * @param Comment $comment
+     *
      * @return Article
      */
     public function removeComment(Comment $comment): self
@@ -354,6 +374,7 @@ class Article
      * Setter for Content.
      *
      * @param string $content
+     *
      * @return Article
      */
     public function setContent(string $content): self

@@ -6,14 +6,11 @@
 namespace App\Form;
 
 use App\Entity\Category;
-use Doctrine\DBAL\Types\DateType;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 /**
  * Class CategoryType.
@@ -37,12 +34,11 @@ class CategoryType extends AbstractType
             'name',
             TextType::class,
             [
-                'label' => ' Kategoria:',
+                'label' => 'label.category',
                 'required' => true,
-                'label' => false,
-                'attr' => ['max_length' => 20, 'class'=> 'form-control',],
+                'attr' => ['max_length' => 20, 'class' => 'form-control'],
+                'constraints'=> [new NotBlank()]
             ]);
-
     }
 
     /**
@@ -52,7 +48,10 @@ class CategoryType extends AbstractType
      */
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults(['data_class' => Category::class]);
+        $resolver->setDefaults([
+            'label' => false,
+            'data_class' => Category::class
+        ]);
     }
 
     /**
@@ -68,4 +67,3 @@ class CategoryType extends AbstractType
         return 'category';
     }
 }
-

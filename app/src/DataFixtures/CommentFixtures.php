@@ -21,7 +21,7 @@ class CommentFixtures extends AbstractBaseFixtures implements DependentFixtureIn
      */
     public function loadData(ObjectManager $manager): void
     {
-        $this->createMany(50, 'comment', function ($i) {
+        $this->createMany(40, 'comment', function ($i) {
             $comment = new Comment();
             $comment->setContent($this->faker->boolean ? $this->faker->paragraph : $this->faker->sentences(2, true));
             $comment->setAuthor($this->getRandomReference('users'));

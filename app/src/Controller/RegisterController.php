@@ -1,33 +1,34 @@
 <?php
+/**
+ * RegistrationController
+ */
 
 namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserTypeType;
 use Doctrine\Common\Persistence\ManagerRegistry;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\FormTypeInterface;
+
 /**
- * Class RegisterController.
+ * Class RegisterController
+ * @package App\Controller
  */
 class RegisterController extends Controller
 {
-
     /**
-     * register action.
+     * Registration Action for User.
+     *
+     * @param Request $request
+     * @param UserPasswordEncoderInterface $passwordEncoder
+     * @param ManagerRegistry $managerRegistry
+     * @return Response
      *
      * @Route("/rejestracja", name="app_register")
-     *
-     * @param Request                      $request
-     * @param UserPasswordEncoderInterface $passwordEncoder
-     * @param ManagerRegistry              $managerRegistry
-     *
-     * @return Response
      */
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, ManagerRegistry $managerRegistry): Response
     {
@@ -47,16 +48,11 @@ class RegisterController extends Controller
             $entityManager->persist($user);
             $entityManager->flush();
 
-
             return $this->redirectToRoute('app_stronastartowa');
         }
 
         return $this->render('register/index.html.twig', [
             'form' => $form->createView(),
         ]);
-
-
     }
-
-
 }

@@ -1,51 +1,62 @@
 <?php
+/**
+ * ArticleAdminController
+ * @author Aneta Satława
+ * @package App\Controller
+ */
 
 namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Comment;
-use App\Entity\Category;
-use App\Entity\User;
 use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
-use App\Repository\CategoryRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Gedmo\Mapping\Annotation\Slug;
-use http\QueryString;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * Class ArticleAdminController
+ * @Route("admrights")
+ */
 class ArticleAdminController extends AbstractController
 {
-
     /**
-     * @Route("/admrights", name="app_admini")
+     * Stronaadmin page with paginator.
+     *
+     * @param Request $request
+     * @param ArticleRepository $repository
+     * @param PaginatorInterface $paginator
+     * @return Response
+     * @Route("/", name="app_admini")
      */
-    public function stronastartowa(EntityManagerInterface $em)
+    public function stronaadmin(Request $request, ArticleRepository $repository, PaginatorInterface $paginator): Response
     {
-        $repository = $em->getRepository(Article::class);
-        $article = $repository->findAllPublishedOrderedByNewest();
-        return $this->render('admrights/admini.html.twig',[
-            'article'=> $article,
+        $pags = $paginator->paginate(
+            $repository->queryAll(),
+            $request->query->getInt('page', 1),
+            Article::NUMBER_OF_ITEMS
+        );
+
+        return $this->render('admrights/admini.html.twig', [
+            'pagination' => $pags,
         ]);
     }
 
-
     /**
-     * New action.
+     * New Article Action.
      *
-     * @param \Symfony\Component\HttpFoundation\Request $request HTTP request
-     * @param \App\Repository\ArticleRepository $repository Article repository
-     *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
-     *
+     * @param Request $request
+     * @param ArticleRepository $repository
+     * @return Response
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
      * @Route(
-     *     "/admrights/article/new",
+     *     "/article/new",
      *     methods={"GET", "POST"},
      *     name="article_new",
      * )
@@ -62,12 +73,13 @@ class ArticleAdminController extends AbstractController
 //            $article->setTitle($data);
 //            $article->setSubtitle($data);
             $article->setCreatedAt(new \DateTime());
-            $article->setSlug('title'.rand(100,900));
+            $article->setSlug('title' . rand(100, 900));
             $article->setUser($this->getUser());
 
             $repository->save($article);
 
             $this->addFlash('success', 'Atykuł został dodany');
+
             return $this->redirectToRoute('app_admini');
         }
 
@@ -78,14 +90,12 @@ class ArticleAdminController extends AbstractController
     }
 
     /**
-     * Edit action.
+     * Edit Article Action.
      *
-     * @param \Symfony\Component\HttpFoundation\Request $request    HTTP request
-     * @param \App\Entity\Article                          $article       Article entity
-     * @param \App\Repository\ArticleRepository            $repository Article repository
-     *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
-     *
+     * @param Request $request
+     * @param Article $article
+     * @param ArticleRepository $repository
+     * @return Response
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -98,6 +108,7 @@ class ArticleAdminController extends AbstractController
      */
     public function edit(Request $request, Article $article, ArticleRepository $repository): Response
     {
+
         $form = $this->createForm(ArticleType::class, $article, ['method' => 'PUT']);
         $form->handleRequest($request);
 
@@ -118,70 +129,46 @@ class ArticleAdminController extends AbstractController
         );
     }
 
+
     /**
-     * Delete action.
+     * Delete Article Action.
      *
-     * @param \Symfony\Component\HttpFoundation\Request $request    HTTP request
-     * @param \App\Entity\Article                     $article   Article entity
-     * @param \App\Repository\ArticleRepository        $repository Article repository
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
-     *
-     * @throws \Doctrine\ORM\ORMException
-     * @throws \Doctrine\ORM\OptimisticLockException
-     *
-     * @Route(
-     *     "/{id}/delete",
-     *     methods={"GET", "DELETE"},
-     *     requirements={"id": "[1-9]\d*"},
+     * @Route("/{id}/delete",
      *     name="article_delete",
-     * )
+     *     requirements={"id": "[1-9]\d*"}
+     *   )
      */
-    public function delete(Request $request, Article $article, ArticleRepository $repository): Response
+    public function delete_article($id)
     {
-        $form = $this->createForm(ArticleType::class, $article, ['method' => 'DELETE']);
-        $form->handleRequest($request);
-
-        if ($request->isMethod('DELETE') && !$form->isSubmitted()) {
-            $form->submit($request->request->get($form->getName()));
-        }
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $repository->delete($article);
-            $this->addFlash('success', 'Wpis został usunięty!');
-
-            return $this->redirectToRoute('app_admini');
-        }
-
-        return $this->render(
-            'admrights/delete.html.twig',
-            [
-                'form' => $form->createView(),
-                'article' => $article,
-            ]
-        );
+        $comment = $this->getDoctrine()
+            ->getRepository(Article::class)
+            ->find($id);
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($comment);
+        $em->flush();
+        $this->addFlash('success', 'Artykuł został usunięty!');
+        return $this->redirectToRoute("app_admini");
     }
 
-    // ...
+
     /**
-     * View InfoPage
-     *
-     *
+     * View AboutProject Action.
+     * @param ArticleRepository $repository
+     * @return Response
      *
      * @Route(
      *     "/ostronie",
      *     name="o_stronie",
      * )
      */
-    public function view(ArticleRepository $repository):Response
+    public function view(ArticleRepository $repository): Response
     {
         return $this->render(
             'info/ostronie.html.twig',
             ['repo' => $repository]
         );
     }
-
-
-
-
 }

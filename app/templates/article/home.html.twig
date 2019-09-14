@@ -1,5 +1,5 @@
 {% extends 'base.html.twig.' %}
-{%  block title %} {{ "GAZETA - O" }}{% endblock %}
+{% block title %} {{ "GAZETA - O" }}{% endblock %}
 {% block body %}
     <div class="jumbotron">
         <h3 class="display-3">Katalog bajek i legend stoi otworem!</h3>
@@ -7,20 +7,34 @@
         <hr class="my-4">
         <p>Od polskich legend przez bałtyckie opowieści przez morze do Andersena. Daj się porwać magii baśni. </p>
     </div>
+    {% if pagination is defined and pagination|length %}
 
-    {% for artykul in article %}
-        <div class="list-group" style="margin-left: 160px; margin-right: 260px; margin-bottom: 10px">
-        <a href="{{ path('article_show',{id:artykul.id}) }}"  class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{{ artykul.title }}</h5>
-                <small class="text-muted">{{ 'dodano: ' ~ artykul.createdAt|date("d/m/Y") }}</small>
-            </div>
-            <p class="mb-1">{{ artykul.subtitle }}</p>
-
-        </a>
+        <div class="navigation text-center">
+            {{ knp_pagination_render(pagination) }}
         </div>
-     {% endfor %}
 
+        {% for artykul in pagination %}
+            <div class="list-group" style="margin-left: 160px; margin-right: 260px; margin-bottom: 10px">
+                <a href="{{ path('article_show',{id:artykul.id}) }}"
+                   class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ artykul.title }}</h5>
+                        <small class="text-muted">{{ 'label.published'|trans  ~ ': ' ~ artykul.createdAt|date("d/m/Y") }}</small>
+                    </div>
+                    <p class="mb-1">{{ artykul.subtitle }}</p>
+
+                </a>
+            </div>
+        {% endfor %}
+        <div class="navigation text-center">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+
+    {% else %}
+        <p>
+            {{ 'Go back/Powrót' }}
+        </p>
+    {% endif %}
 
     <br><br>
 {% endblock %}

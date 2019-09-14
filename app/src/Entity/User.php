@@ -3,18 +3,18 @@
 /**
  * User entity.
  */
+
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
-use Symfony\Component\Security\Core\Validator\Constraints as SecurityAssert;
 use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Component\Form\FormTypeInterface;
 
 /**
  * Class User
+ * @package App\Entity
+ *
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  *
  * @ORM\Table(
@@ -64,12 +64,12 @@ class User implements UserInterface
     /**
      * Loginname.
      *
-     * @var string $loginname
+     * @var string
      * @ORM\Column(type="string", length=40)
      *
      * @Assert\NotBlank
      * @Assert\Length(
-     *     min="3",
+     *     min="5",
      *     max="255",
      * )
      */
@@ -82,15 +82,14 @@ class User implements UserInterface
      *
      * @Assert\NotBlank
      * @Assert\Length(
-     *     min="3",
+     *     min="5",
      *     max="255",
      * )
-     *
      */
     private $password;
 
     /**
-     * Roles
+     * Roles.
      *
      * @ORM\Column(type="array")
      */
@@ -105,7 +104,6 @@ class User implements UserInterface
     {
         return $this->id;
     }
-
 
     /*
      *
@@ -131,14 +129,15 @@ class User implements UserInterface
     /**
      * {@inheritdoc}
      *
+     * @return string User name
      * @see UserInterface
      *
-     * @return string User name
      */
     public function getUsername(): string
     {
         return (string)$this->loginname;
     }
+
     /**
      * Getter for the Password.
      *
@@ -181,22 +180,22 @@ class User implements UserInterface
     public function setRoles(array $roles): void
     {
         $this->roles = $roles;
-
     }
 
     /**
      * @param $role
+     *
      * @return bool
      */
-    public function hasRole($role) :bool
+    public function hasRole($role): bool
     {
         $roles = $this->getRoles();
         if (in_array($role, $roles)) {
             return true;
         }
+
         return false;
     }
-
 
     /**
      * @see UserInterface
@@ -205,6 +204,7 @@ class User implements UserInterface
     {
         // not needed when using bcrypt or argon
     }
+
     /**
      * @see UserInterface
      */
@@ -214,6 +214,3 @@ class User implements UserInterface
         // $this->plainPassword = null;
     }
 }
-
-
-

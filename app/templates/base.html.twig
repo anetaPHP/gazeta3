@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html>
 <style> body {
-        margin-left: 140px}</style>
+        margin-left: 140px
+    }</style>
 <title>{% block title %}Welcome!{% endblock %}</title>
 <head>
     <meta charset="UTF-8">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="{{ path('app_stronastartowa') }}">gAzEtA-O</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ path('app_stronastartowa') }}">Strona startowa <span class="sr-only">(current)</span></a>
-                </li>
-        <!--       <li class="nav-item">
-                    <a class="nav-link" href="{{ path('security_login') }}">Login</a>
+                    <a class="nav-link" href="{{ path('app_stronastartowa') }}">{{ 'label.homepage'|trans }} <span
+                                class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('app_register') }}">Rejestracja</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('o_stronie') }}">O stronie</a>
+                    <a class="nav-link" href="{{ path('o_stronie') }}">{{ 'label.about'|trans }}</a>
                 </li>
                 {% if is_granted("ROLE_ADMIN") %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_admini') }}">Panel admina</a>
+                        <a class="nav-link" href="{{ path('app_admini') }}">{{ 'label.adminpanel'|trans }}</a>
                     </li>
                 {% endif %}
             </ul>
+            <div>
+                <a href="{{ url('set_language', {'_locale': 'pl'}) }}">
+                    <button class="btn btn-primary btn-lg" type="button"> PL</button>
+                </a>
+            </div>
+            <div>
+                <a href="{{ url('set_language', {'_locale': 'en'}) }}">
+                    <button class="btn btn-primary btn-lg" type="button"> EN</button>
+                </a>
+            </div>
             {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
                 <div>
-                    <a href="{{ url('security_logout') }}"><button class="btn btn-primary btn-lg" type="button">Wyloguj ({{ app.user.loginname }})</button></a>
+                    <a href="{{ url('security_logout') }}">
+                        <button class="btn btn-primary btn-lg"
+                                type="button"> {{ 'label.logout'|trans ~ ' (' ~ app.user.loginname ~ ')' }}</button>
+                    </a>
                 </div>
             {% else %}
                 <div>
-                    <a href="{{ url('app_register') }}"><button class="btn btn-primary btn-lg" type="button">Zarejestruj</button></a>
+                    <a href="{{ url('app_register') }}">
+                        <button class="btn btn-primary btn-lg" type="button">{{ 'label.registartion'|trans }}</button>
+                    </a>
                 </div>
                 <div>
-                    <a href="{{ url('security_login') }}"><button class="btn btn-primary btn-lg" type="button">Zaloguj</button></a>
+                    <a href="{{ url('security_login') }}">
+                        <button class="btn btn-primary btn-lg" type="button">{{ 'label.login'|trans }}</button>
+                    </a>
                 </div>
             {% endif %}
         </div>
@@ -54,7 +68,9 @@
     {% endfor %}
 
     {% block stylesheets %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     {% endblock %}
@@ -63,11 +79,10 @@
 <div style="padding-top:80px"></div>
 <div class="container-fluid">
     {% include 'default/_flash_messages.html.twig' %}
-{% block body %}
+    {% block body %}
 
 
-{% endblock %}
-</div>
+    {% endblock %}
 </div>
 {% block body1 %}
 
@@ -76,21 +91,28 @@
 
 {% block bodyx %}{% endblock %}
 {% block javascripts %}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 {% endblock %}
 {% block after_javascripts %}
 {% endblock %}
 
 </body>
 {% block footer %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="{{ path('app_stronastartowa') }}" >Gazeta-O </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="{{ path('app_stronastartowa') }}">Gazeta-O </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-</nav>
-{% endblock%}
+    </nav>
+{% endblock %}
 </html>

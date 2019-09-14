@@ -3,17 +3,30 @@
 /**
  * Comment entity.
  */
+
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
+ * Class Comment
+ * @package App\Entity
+ *
  * @ORM\Entity(repositoryClass="App\Repository\CommentRepository")
  * @ORM\Table(name="comment")
  */
 class Comment
 {
+    /**
+     * Use constants to define configuration options that rarely change instead
+     * of specifying them in app/config/config.yml.
+     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options
+     *
+     * @constant int NUMBER_OF_ITEMS
+     */
+    const NUMBER_OF_ITEMS = 5;
+
     /**
      * Primary key.
      *
@@ -30,11 +43,12 @@ class Comment
      *
      * @var string
      * @ORM\Column(type="string", length=180)
+     * @Assert\NotBlank()
      */
     private $content;
 
     /**
-     * Author
+     * Author.
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\User")
      * @ORM\JoinColumn(nullable=false)
@@ -42,7 +56,7 @@ class Comment
     private $author;
 
     /**
-     * Aticle
+     * Aticle.
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\Article", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
@@ -117,6 +131,7 @@ class Comment
      * Setter for Article.
      *
      * @param Article|null $article
+     *
      * @return Comment
      */
     public function setArticle(?Article $article): self
@@ -125,5 +140,4 @@ class Comment
 
         return $this;
     }
-
 }

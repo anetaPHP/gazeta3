@@ -1,14 +1,20 @@
 <?php
 
+/**
+ * CategoryRepository ProjktPHPSatlawa
+ */
+
 namespace App\Repository;
 
-use App\Entity\Article;
 use App\Entity\Category;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\ORM\QueryBuilder;
 
 /**
+ * Class CategoryRepository
+ * @package App\Repository
+ *
  * @method Category|null find($id, $lockMode = null, $lockVersion = null)
  * @method Category|null findOneBy(array $criteria, array $orderBy = null)
  * @method Category[]    findAll()
@@ -16,7 +22,6 @@ use Doctrine\ORM\QueryBuilder;
  */
 class CategoryRepository extends ServiceEntityRepository
 {
-
     /**
      * CategoryRepository constructor.
      *
@@ -34,7 +39,7 @@ class CategoryRepository extends ServiceEntityRepository
      */
     public function findAllCategoryById()
     {
-        /**
+        /*
          * @return Category[]
          */
         return $this->createQueryBuilder('k')
@@ -43,6 +48,7 @@ class CategoryRepository extends ServiceEntityRepository
             ->getQuery()
             ->getResult();
     }
+
     /**
      * Save record.
      *
@@ -56,6 +62,7 @@ class CategoryRepository extends ServiceEntityRepository
         $this->_em->persist($category);
         $this->_em->flush($category);
     }
+
     // /**
     //  * @return Category[] Returns an array of Category objects
     //  */
@@ -72,6 +79,7 @@ class CategoryRepository extends ServiceEntityRepository
         ;
     }
     */
+
     /**
      * Delete record.
      *
@@ -87,15 +95,17 @@ class CategoryRepository extends ServiceEntityRepository
     }
 
     /**
+     * QueryAll Action CategoryOrderbyIdNewest
+     *
      * @return QueryBuilder
      */
     public function queryAll(): QueryBuilder
     {
         return $this->getOrCreateQueryBuilder()
             ->orderBy('k.id', 'DESC')
-            ->andWhere('k.id IS NOT NULL')
-            ;
+            ->andWhere('k.id IS NOT NULL');
     }
+
     /**
      * Get or create new query builder.
      *

@@ -3,11 +3,15 @@
 /**
  * Justtesting entity.
  */
+
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * Class JustTesting
+ * @package App\Entity
+ *
  * @ORM\Entity(repositoryClass="App\Repository\JustTestingRepository")
  * @ORM\Table(name="justtesting")
  */
@@ -22,6 +26,7 @@ class JustTesting
      * @ORM\Column(type="integer")
      */
     private $id;
+
     /**
      * Getter for Id.
      *

@@ -5,25 +5,42 @@
 
 namespace App\Controller;
 
-use App\Repository\JustTestingRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class SecurityController.
+ * Class SecurityController
+ * @package App\Controller
  */
 class SecurityController extends AbstractController
 {
+    /**
+     * SetLanguage Action.
+     *
+     * @param Request $request
+     * @return RedirectResponse
+     *
+     * @Route("/set-language/{_locale}", name="set_language")
+     */
+    public function setLanguageAction(Request $request)
+    {
+        $request->setDefaultLocale($request->get('_locale'));
+        $referer = $request->headers->get('referer');
+        if ($referer) {
+            return new RedirectResponse($referer);
+        }
+        return $this->redirectToRoute('app_stronastartowa');
+    }
 
     /**
-     * Login form action.
+     * LoginForm Action.
      *
-     * @param \Symfony\Component\Security\Http\Authentication\AuthenticationUtils $authenticationUtils Auth utils
-     *
-     * @return \Symfony\Component\HttpFoundation\Response HTTP response
+     * @param AuthenticationUtils $authenticationUtils
+     * @return Response
      *
      * @Route(
      *     "/login",
@@ -38,7 +55,6 @@ class SecurityController extends AbstractController
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
 
-
         return $this->render(
             'security/login.html.twig',
             [
@@ -48,9 +64,8 @@ class SecurityController extends AbstractController
         );
     }
 
-
     /**
-     * Logout action.
+     * Logout Action.
      *
      * @throws \Exception
      *
