@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d5e056-0a94-4d61-9a1c-c4852c9a723f" name="Default Changelist" comment="">
+    <list default="true" id="76d5e056-0a94-4d61-9a1c-c4852c9a723f" name="Default Changelist" comment="project">
       <change afterPath="$PROJECT_DIR$/app/$article" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/$comment" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/$slug])" afterDir="false" />
@@ -45,7 +45,6 @@
       <change afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/translations/messages.en.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/translations/messages.pl.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
@@ -165,11 +164,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="123">
+              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/admrights/admini.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,18 +208,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
-              <folding>
-                <element signature="e#3537#3570#0#Twig" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -229,7 +237,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>artic</find>
       <find>conte</find>
       <find>subtit</find>
       <find>cate</find>
@@ -259,6 +266,7 @@
       <find>code</find>
       <find>create</find>
       <find>twig</find>
+      <find>idea</find>
     </findStrings>
     <replaceStrings>
       <replace>article</replace>
@@ -312,7 +320,6 @@
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" />
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" />
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190911191952.php" />
-        <option value="$PROJECT_DIR$/app/templates/admrights/admini.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/admrights/category.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/admrights/new.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/admrights/view.html.twig" />
@@ -334,6 +341,7 @@
         <option value="$PROJECT_DIR$/app/src/Controller/CommentController.php" />
         <option value="$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Plugin/Core/Transformer/Writer/Xml.php" />
         <option value="$PROJECT_DIR$/app/composer.json" />
+        <option value="$PROJECT_DIR$/app/templates/admrights/admini.html.twig" />
       </list>
     </option>
   </component>
@@ -483,83 +491,57 @@
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admrights" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="info" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
-              <item name="Transformer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
-              <item name="Transformer" type="462c0819:PsiDirectoryNode" />
-              <item name="Writer" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
@@ -666,12 +648,12 @@
       <workItem from="1568357963356" duration="51619000" />
       <workItem from="1568443945203" duration="25418000" />
       <workItem from="1568476017045" duration="44000" />
-      <workItem from="1568478231304" duration="5351000" />
+      <workItem from="1568478231304" duration="6557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="652624000" />
+    <option name="totallyTimeSpent" value="653830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -785,13 +767,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/DataFixtures/TagFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="6" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/DataFixtures/DataFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1005,13 +980,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/css/template.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/admrights/admini.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="52" selection-end-line="64" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/admrights/category.html.twig">
       <provider selected="true" editor-type-id="text-editor">
@@ -1228,8 +1196,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="123">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/admrights/admini.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
