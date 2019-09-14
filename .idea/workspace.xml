@@ -2,267 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d5e056-0a94-4d61-9a1c-c4852c9a723f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/$article" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/$comment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/$slug])" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/packages/stof_doctrine_extensions.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/getComments()" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/.htaccess" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/public/js/article_form.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Controller/CategoryController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Controller/CommentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/RegisterController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/DataFixtures/CommentFixtures.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/DataFixtures/TagFixtures.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Entity/JustTesting.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Form/ArticleType.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Form/CategoryType.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Form/CommentType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Form/TagType.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Form/UserTypeType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190911191952.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Repository/JustTestingRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/Subscriber/LocaleSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/admrights/category.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/admrights/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/admrights/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/admrights/view.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/category/editcategory.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/category/index.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/category/newcategory.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/comment/comment.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/default/_flash_messages.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/default/_form.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/default/_form_article.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/default/_single_flash_message.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/register/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/translations/messages.en.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/translations/messages.pl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Controller.ArticleController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Controller.CommentController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Controller.RegisterController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Controller.SecurityController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.AbstractBaseFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.AppFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.ArticleFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.CategoryFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.CommentFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.DataFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.TagFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.UserFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Form.ArticleType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Form.CategoryType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Form.CommentType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Form.TagType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Form.UserTypeType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Kernel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Repository.ArticleRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Repository.CategoryRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Repository.CommentRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Repository.JustTestingRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Repository.TagRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Repository.UserRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/App.Subscriber.LocaleSubscriber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190910170414.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190910171748.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190911191952.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/bootstrap-combined.no-icons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/jquery.iviewer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/Read Me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.dev.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/lte-ie7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/phpdocumentor-clean-icons/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/css/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller.ArticleAdminController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller.ArticleController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller.CategoryController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller.CommentController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller.RegisterController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller.SecurityController.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller/ArticleAdminController.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller/ArticleController.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller/CategoryController.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller/CommentController.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller/RegisterController.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Controller/SecurityController.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.AbstractBaseFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.AppFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.ArticleFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.CategoryFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.CommentFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.DataFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.TagFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures.UserFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/AbstractBaseFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/AppFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/ArticleFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/CategoryFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/CommentFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/DataFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/TagFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/DataFixtures/UserFixtures.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity.Article.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity.Category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity.Comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity.JustTesting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity.Tag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity.User.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity/Article.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity/Category.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity/Comment.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity/JustTesting.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity/Tag.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Entity/User.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form.ArticleType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form.CategoryType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form.CommentType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form.TagType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form.UserTypeType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form/ArticleType.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form/CategoryType.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form/CommentType.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form/TagType.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Form/UserTypeType.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Kernel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Kernel.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Migrations.Version20190910170414.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Migrations.Version20190910171748.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Migrations.Version20190911191952.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Migrations/Version20190910170414.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Migrations/Version20190910171748.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Migrations/Version20190911191952.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository.ArticleRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository.CategoryRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository.CommentRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository.JustTestingRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository.TagRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository.UserRepository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository/ArticleRepository.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository/CategoryRepository.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository/CommentRepository.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository/JustTestingRepository.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository/TagRepository.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Repository/UserRepository.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Security.LoginFormAuthenticator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Security/LoginFormAuthenticator.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Subscriber.LocaleSubscriber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/files/Subscriber/LocaleSubscriber.php.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/font/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/font/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/graphs/class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/apple-touch-icon-114x114.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/apple-touch-icon-72x72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/custom-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/hierarchy-item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/icon-class-13x13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/icon-class.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/icon-interface-13x13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/icon-interface.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/icon-trait-13x13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/icon-trait.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/grab.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/hand.cur" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/iviewer.rotate_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/iviewer.rotate_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/iviewer.zoom_fit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/iviewer.zoom_in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/iviewer.zoom_out.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/iviewer/iviewer.zoom_zero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/html5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery-1.11.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery.dotdotdot-1.5.9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery.dotdotdot-1.5.9.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery.iviewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery.iviewer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/jquery.smooth-scroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/prism.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/js/ui/1.10.4/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/App.Controller.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/App.DataFixtures.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/App.Form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/App.Repository.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/App.Subscriber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/App.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/DoctrineMigrations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/namespaces/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-0b/phpdoc-cache-file_a417395892b3c156ffd53b1457b5b16b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-11/phpdoc-cache-file_686910fc8d9dc704008f7516abd222e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-16/phpdoc-cache-file_838ed6541408d4952146bcfe3bfa76e0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-1c/phpdoc-cache-file_1ef539f0989718f04ae0aef3e0cb2480.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-1c/phpdoc-cache-file_55bcf17c71b44f79a9af14d81aacbf90.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-29/phpdoc-cache-file_6bbf466e9e2adde56ebbfd666e1d32ab.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-2e/phpdoc-cache-settings.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-2f/phpdoc-cache-file_47afc942f1b01f4f33b23c6810c8880e.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-2f/phpdoc-cache-file_5db4096a176a8756197f1d9eca3cf1aa.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-31/phpdoc-cache-file_823170236010dce35bd5f92a246b7271.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-41/phpdoc-cache-file_63d8723be6f532482f18813bab28aa15.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-48/phpdoc-cache-file_070a78c78b0da3ef868b9f6ffd339d7a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-49/phpdoc-cache-file_27b82fb0ed4e1d1b9608298fcb1a06dc.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-4d/phpdoc-cache-file_75af4c6bd06b07db0f85114d740d619b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-4d/phpdoc-cache-file_8f1fab6570ef4df6df543acdc4269ad4.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-65/phpdoc-cache-file_eebbe1b634f912b0d0d8b4059d5f2cf9.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-66/phpdoc-cache-file_2b0874f4ea29f52e6fdad40fe5ac27fc.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-66/phpdoc-cache-file_b8742486c21158ca06cdaf58a500ace8.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-6e/phpdoc-cache-file_ef0e01751ee35cba557d17d424ccec02.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-73/phpdoc-cache-file_3baf10646ddfdb78bc674b91ed48f3c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-7d/phpdoc-cache-file_d122e639ac958001aeee73154ac73bbb.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-88/phpdoc-cache-file_7115148ec283527ed397bb5b3006c3fc.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-92/phpdoc-cache-file_c8c80d3fc2650edd66fc0df41bd8457f.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-94/phpdoc-cache-file_0e3ad0729650cafac4b13b9add56547c.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-97/phpdoc-cache-file_a02a2289da78e9c88275c11133a59fe7.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-a3/phpdoc-cache-file_4a785f6c512b87cac39bf215706a0cc3.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-a8/phpdoc-cache-file_7085619c9caa4056a424ae21c7594ff7.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-b7/phpdoc-cache-file_1d46f4d0b5a16288d0bf6f38dd71a368.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-b8/phpdoc-cache-file_a99ce0e106a4afc77cf619af3238c57f.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-be/phpdoc-cache-file_20068079b9d3ed80d14a7f18b40e18c9.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-c9/phpdoc-cache-file_82ec205f68c3f58e0b374aab95fd4ac5.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-d3/phpdoc-cache-file_3e729f43505330f7380e38424124dae3.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-d4/phpdoc-cache-file_041eec615705001f053dffa922e9937f.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-e4/phpdoc-cache-file_f1591c87b8bef0615d759a7eeca90c36.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-e5/phpdoc-cache-file_c0f824cab0254fc7eee8bd4af9a60a4e.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-f6/phpdoc-cache-file_651cc01ec4d54e543760713385365d37.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-f9/phpdoc-cache-file_565fdeee6d2ba94e68e6dfdee2e8adc2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/phpdoc-cache-fb/phpdoc-cache-file_471e452ac6a6f776da7924217c68ecda.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reports/deprecated.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reports/errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/reports/markers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gazeta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gazeta.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/translation.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/js/article_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/js/article_form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/AbstractBaseFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/AbstractBaseFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/ArticleFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/CategoryFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/CategoryFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/CommentFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/CommentFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/DataFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/DataFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/TagFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/TagFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/DataFixtures/UserFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/JustTesting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/JustTesting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/ArticleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Form/CategoryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/CategoryType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Form/CommentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/CommentType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Form/TagType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/TagType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Form/UserTypeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Form/UserTypeType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190902064409.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190902064931.php" beforeDir="false" />
@@ -274,42 +75,18 @@
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190902114001.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190902122028.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190902133735.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190911191952.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190911191952.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/ArticleRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Repository/CategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/CategoryRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/CommentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Repository/JustTestingRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/JustTestingRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Repository/TagRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/TagRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/admrights/admini.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/admrights/admini.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/admrights/category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/admrights/category.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/admrights/delete.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/admrights/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/admrights/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/admrights/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/admrights/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/admrights/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/admrights/view.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/article/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/article/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/article/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/category/deletecategory.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/category/editcategory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/category/editcategory.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/category/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/category/newcategory.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/category/newcategory.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/comment/comment.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/comment/comment.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/comment/commentdelete.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/default/_flash_messages.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/default/_flash_messages.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/default/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/default/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/default/_form_article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/default/_form_article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/default/_formcomment.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/info/ostronie.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/info/ostronie.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/katalog/katalog.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/register/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/security/rejestracja.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Plugin/Core/Transformer/Writer/Xml.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Plugin/Core/Transformer/Writer/Xml.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -379,11 +156,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Plugin/Core/Transformer/Writer/Xml.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="266" column="9" selection-start-line="266" selection-start-column="9" selection-end-line="266" selection-end-column="9" />
+            <state relative-caret-position="152">
+              <caret line="260" column="83" lean-forward="true" selection-start-line="260" selection-start-column="83" selection-end-line="260" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -443,8 +229,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getRo</find>
-      <find>con</find>
       <find>artic</find>
       <find>conte</find>
       <find>subtit</find>
@@ -473,6 +257,8 @@
       <find>comme</find>
       <find>Kernel.php</find>
       <find>code</find>
+      <find>create</find>
+      <find>twig</find>
     </findStrings>
     <replaceStrings>
       <replace>article</replace>
@@ -489,7 +275,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="cb76c9c2-7a53-467a-9df5-7ed9754d043c" />
@@ -497,7 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/Form/CategoryType.php" />
         <option value="$PROJECT_DIR$/app/translations/messages.pl.yml" />
         <option value="$PROJECT_DIR$/app/translations/messages.en.yml" />
         <option value="$PROJECT_DIR$/app/src/Form/ArticleType.php" />
@@ -548,6 +333,7 @@
         <option value="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" />
         <option value="$PROJECT_DIR$/app/src/Controller/CommentController.php" />
         <option value="$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Plugin/Core/Transformer/Writer/Xml.php" />
+        <option value="$PROJECT_DIR$/app/composer.json" />
       </list>
     </option>
   </component>
@@ -688,6 +474,11 @@
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
@@ -875,12 +666,12 @@
       <workItem from="1568357963356" duration="51619000" />
       <workItem from="1568443945203" duration="25418000" />
       <workItem from="1568476017045" duration="44000" />
-      <workItem from="1568478231304" duration="4438000" />
+      <workItem from="1568478231304" duration="5351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="651711000" />
+    <option name="totallyTimeSpent" value="652624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -893,6 +684,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83253586" visible="true" weight="0.17516778" />
       <window_info id="Structure" order="1" sideWeight="0.5021552" side_tool="true" weight="0.263285" />
@@ -987,6 +779,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project" />
+    <option name="LAST_COMMIT_MESSAGE" value="project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/DataFixtures/TagFixtures.php">
@@ -1217,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/admrights/category.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1432,8 +1221,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Plugin/Core/Transformer/Writer/Xml.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="266" column="9" selection-start-line="266" selection-start-column="9" selection-end-line="266" selection-end-column="9" />
+        <state relative-caret-position="152">
+          <caret line="260" column="83" lean-forward="true" selection-start-line="260" selection-start-column="83" selection-end-line="260" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
