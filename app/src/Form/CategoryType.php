@@ -23,10 +23,10 @@ class CategoryType extends AbstractType
      * This method is called for each type in the hierarchy starting from the
      * top most type. Type extensions can further modify the form.
      *
+     * @param FormBuilderInterface $builder The form builder
+     * @param array $options The options
      * @see FormTypeExtensionInterface::buildForm()
      *
-     * @param FormBuilderInterface $builder The form builder
-     * @param array                $options The options
      */
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -37,7 +37,7 @@ class CategoryType extends AbstractType
                 'label' => 'label.category',
                 'required' => true,
                 'attr' => ['max_length' => 20, 'class' => 'form-control'],
-                'constraints'=> [new NotBlank()]
+                'constraints' => [new NotBlank()]
             ]);
     }
 

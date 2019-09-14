@@ -26,10 +26,10 @@ class ArticleType extends AbstractType
      * This method is called for each type in the hierarchy starting from the
      * top most type. Type extensions can further modify the form.
      *
+     * @param FormBuilderInterface $builder The form builder
+     * @param array $options The options
      * @see FormTypeExtensionInterface::buildForm()
      *
-     * @param FormBuilderInterface $builder The form builder
-     * @param array                $options The options
      */
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -39,9 +39,11 @@ class ArticleType extends AbstractType
             [
                 'label' => 'label.title',
                 'required' => true,
-                'attr' => ['class' => 'form-control', 'max_length' => 200],
+                'attr' => [
+                    'class' => 'form-control',
+                    'max_length' => 200
+                ]
             ])
-
             ->add(
                 'subtitle',
                 TextType::class,
@@ -50,7 +52,6 @@ class ArticleType extends AbstractType
                     'required' => true,
                     'attr' => ['class' => 'form-control', 'max_length' => 200],
                 ])
-
             ->add(
                 'category',
                 EntityType::class,
@@ -63,7 +64,6 @@ class ArticleType extends AbstractType
                     'placeholder' => 'label.choosecat',
                     'attr' => ['class' => 'form-control'],
                 ])
-
             ->add(
                 'tag',
                 CollectionType::class,
@@ -76,15 +76,14 @@ class ArticleType extends AbstractType
                     'by_reference' => false,
 
                 ])
-
-                ->add(
+            ->add(
                 'content',
                 TextareaType::class,
-            [
-                'label' => 'label.content',
-                'required' => true,
-                'attr' => ['class' => 'form-control', 'max_length' => 1000, 'cols' => '10', 'rows' => '10'],
-            ]);
+                [
+                    'label' => 'label.content',
+                    'required' => true,
+                    'attr' => ['class' => 'form-control', 'max_length' => 1000, 'cols' => '10', 'rows' => '10'],
+                ]);
     }
 
     /**

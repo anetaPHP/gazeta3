@@ -5,6 +5,7 @@ declare(strict_types=1);
 /**
  * Summary Migration3
  */
+
 namespace DoctrineMigrations;
 
 use Doctrine\DBAL\Schema\Schema;

@@ -139,7 +139,7 @@ class CategoryController extends AbstractController
      *     requirements={"id": "[1-9]\d*"}
      *   )
      */
-    public function delete_category($id)
+    public function deleteCategory($id)
     {
         $category = $this->getDoctrine()
             ->getRepository(Category::class)
@@ -155,6 +155,5 @@ class CategoryController extends AbstractController
             $this->addFlash('danger', 'Kategoria jest jeszcze używana. Można usuwać tylko puste kategorie!');
             return $this->redirectToRoute("category_index");
         }
-
     }
 }

@@ -24,28 +24,28 @@ class UserTypeType extends AbstractType
      * This method is called for each type in the hierarchy starting from the
      * top most type. Type extensions can further modify the form.
      *
+     * @param FormBuilderInterface $builder The form builder
+     * @param array $options The options
      * @see FormTypeExtensionInterface::buildForm()
      *
-     * @param FormBuilderInterface $builder The form builder
-     * @param array                $options The options
      */
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder->add(
             'loginname',
             TextType::class, [
-                'translation_domain' => 'messages',
-                'label' => 'label.username',
-                'attr' => ['class' => 'form-control'], ])
+            'translation_domain' => 'messages',
+            'label' => 'label.username',
+            'attr' => ['class' => 'form-control'],])
             ->add(
-            'password',
-            RepeatedType::class,
-            [
-                'type' => PasswordType::class,
-                'translation_domain' => 'messages',
-                'first_options' => ['label' => 'label.password', 'attr' => ['class' => 'form-control']],
-                'second_options' => ['label' => 'label.reppassword', 'attr' => ['class' => 'form-control']],
-            ]);
+                'password',
+                RepeatedType::class,
+                [
+                    'type' => PasswordType::class,
+                    'translation_domain' => 'messages',
+                    'first_options' => ['label' => 'label.password', 'attr' => ['class' => 'form-control']],
+                    'second_options' => ['label' => 'label.reppassword', 'attr' => ['class' => 'form-control']],
+                ]);
     }
 
     /**
