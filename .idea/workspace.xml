@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d5e056-0a94-4d61-9a1c-c4852c9a723f" name="Default Changelist" comment="project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
     </list>
@@ -37,6 +40,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#52#0#PHP" expanded="true" />
+                <element signature="e#81#104#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/codesniffer2.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -48,21 +64,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/codesnifferaktualizacja.txt">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/Controller/CategoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
-              <folding>
-                <element signature="e#6#36#0#PHP" expanded="true" />
-                <element signature="e#65#89#0#PHP" expanded="true" />
-                <element signature="e#1180#1206#0#PHP" expanded="true" />
-                <element signature="e#2111#2127#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -92,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/Entity/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="953">
               <caret line="155" column="3" lean-forward="true" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
               <folding>
                 <element signature="e#57#105#0#PHP" expanded="true" />
@@ -104,13 +105,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+            <state relative-caret-position="284">
+              <caret line="154" column="33" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
               <folding>
-                <element signature="e#55#87#0#PHP" expanded="true" />
+                <element signature="e#6#40#0#PHP" expanded="true" />
+                <element signature="e#69#92#0#PHP" expanded="true" />
+                <element signature="e#1107#1135#0#PHP" expanded="true" />
+                <element signature="e#2343#2355#1#PHP" expanded="true" />
+                <element signature="e#3425#3437#1#PHP" expanded="true" />
+                <element signature="e#4282#4294#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,17 +143,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/article/home.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -151,8 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>article</find>
-      <find>getTa</find>
       <find>rest</find>
       <find>Add</find>
       <find>na</find>
@@ -181,6 +183,8 @@
       <find>?</find>
       <find>Asse</find>
       <find>Asser</find>
+      <find>pass</find>
+      <find>view</find>
     </findStrings>
     <replaceStrings>
       <replace>article</replace>
@@ -246,8 +250,6 @@
         <option value="$PROJECT_DIR$/app/src/Controller/CommentController.php" />
         <option value="$PROJECT_DIR$/app/src/Controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/src/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" />
-        <option value="$PROJECT_DIR$/app/src/Controller/ArticleController.php" />
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" />
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" />
         <option value="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" />
@@ -258,6 +260,8 @@
         <option value="$PROJECT_DIR$/app/src/Entity/Category.php" />
         <option value="$PROJECT_DIR$/app/src/Entity/Article.php" />
         <option value="$PROJECT_DIR$/app/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" />
+        <option value="$PROJECT_DIR$/app/src/Controller/ArticleController.php" />
       </list>
     </option>
   </component>
@@ -415,6 +419,13 @@
               <item name="gazeta" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -523,12 +534,12 @@
       <workItem from="1568443945203" duration="25418000" />
       <workItem from="1568476017045" duration="44000" />
       <workItem from="1568478231304" duration="16993000" />
-      <workItem from="1568521108822" duration="22557000" />
+      <workItem from="1568521108822" duration="23540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="686823000" />
+    <option name="totallyTimeSpent" value="687806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,8 +552,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83253586" visible="true" weight="0.16845638" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83253586" visible="true" weight="0.16845638" />
       <window_info id="Structure" order="1" sideWeight="0.5021552" side_tool="true" weight="0.263285" />
       <window_info id="Favorites" order="2" sideWeight="0.16746412" side_tool="true" weight="0.17315437" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
@@ -556,7 +568,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.71208054" visible="true" weight="0.25779036" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.71208054" visible="true" weight="0.25779036" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.28791946" side_tool="true" weight="0.34844193" />
       <window_info anchor="bottom" id="Regex Tester" order="13" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.3286119" />
@@ -875,34 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#52#0#PHP" expanded="true" />
-            <element signature="e#81#104#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2082">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#6#40#0#PHP" expanded="true" />
-            <element signature="e#69#92#0#PHP" expanded="true" />
-            <element signature="e#1107#1135#0#PHP" expanded="true" />
-            <element signature="e#2343#2355#1#PHP" expanded="true" />
-            <element signature="e#2235#2260#0#PHP" expanded="true" />
-            <element signature="e#3425#3437#1#PHP" expanded="true" />
-            <element signature="e#3479#3505#0#PHP" expanded="true" />
-            <element signature="e#4282#4294#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Form/CategoryType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1003,13 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/codesnifferaktualizacja.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1044,22 +1021,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Entity/Article.php">
+    <entry file="file://$PROJECT_DIR$/app/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="155" column="3" lean-forward="true" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
+        <state relative-caret-position="284">
+          <caret line="154" column="33" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
           <folding>
-            <element signature="e#57#105#0#PHP" expanded="true" />
+            <element signature="e#6#52#0#PHP" expanded="true" />
+            <element signature="e#81#104#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="109" column="6" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+        <state relative-caret-position="371">
+          <caret line="157" column="1" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="1" />
           <folding>
-            <element signature="e#55#87#0#PHP" expanded="true" />
+            <element signature="e#6#40#0#PHP" expanded="true" />
+            <element signature="e#69#92#0#PHP" expanded="true" />
+            <element signature="e#1107#1135#0#PHP" expanded="true" />
+            <element signature="e#2343#2355#1#PHP" expanded="true" />
+            <element signature="e#3425#3437#1#PHP" expanded="true" />
+            <element signature="e#4282#4294#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Entity/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="953">
+          <caret line="155" column="3" lean-forward="true" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
+          <folding>
+            <element signature="e#57#105#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

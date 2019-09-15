@@ -55,7 +55,7 @@ class Tag
      *
      * @return int|null Id
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -63,9 +63,9 @@ class Tag
     /**
      * Getter for Name.
      *
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
