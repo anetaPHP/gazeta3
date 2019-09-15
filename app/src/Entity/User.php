@@ -142,7 +142,7 @@ class User implements UserInterface
      *
      * @return string|null Password
      */
-    public function getPassword(): string
+    public function getPassword(): ?string
     {
         return $this->password;
     }
@@ -152,7 +152,7 @@ class User implements UserInterface
      *
      * @param string $password Password
      */
-    public function setPassword(string $password): void
+    public function setPassword(?string $password): void
     {
         $this->password = $password;
     }
