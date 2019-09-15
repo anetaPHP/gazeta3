@@ -376,7 +376,7 @@ class Article
      *
      * @return string|null
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }
@@ -384,11 +384,11 @@ class Article
     /**
      * Setter for Content.
      *
-     * @param string $content
+     * @param string|null $content
      *
      * @return Article
      */
-    public function setContent(string $content): self
+    public function setContent(?string $content): self
     {
         $this->content = $content;
 
