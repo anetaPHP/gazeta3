@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="76d5e056-0a94-4d61-9a1c-c4852c9a723f" name="Default Changelist" comment="project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/$article" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/$comment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/$slug])" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bledysniffer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/nazwa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/codesniffer1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/run" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sniffer3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sniffer4.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/CategoryController.php" afterDir="false" />
@@ -17,355 +24,6 @@
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Controller.ArticleController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Controller.ArticleController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Controller.CommentController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Controller.CommentController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Controller.RegisterController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Controller.RegisterController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Controller.SecurityController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Controller.SecurityController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.AbstractBaseFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.AbstractBaseFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.AppFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.AppFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.ArticleFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.ArticleFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.CategoryFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.CategoryFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.CommentFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.CommentFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.DataFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.DataFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.TagFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.TagFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.DataFixtures.UserFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.DataFixtures.UserFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Form.ArticleType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Form.ArticleType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Form.CategoryType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Form.CategoryType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Form.CommentType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Form.CommentType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Form.TagType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Form.TagType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Form.UserTypeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Form.UserTypeType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Kernel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Kernel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Repository.ArticleRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Repository.ArticleRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Repository.CategoryRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Repository.CategoryRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Repository.CommentRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Repository.CommentRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Repository.JustTestingRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Repository.JustTestingRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Repository.TagRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Repository.TagRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Repository.UserRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Repository.UserRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/App.Subscriber.LocaleSubscriber.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/App.Subscriber.LocaleSubscriber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190910170414.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190910170414.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190910171748.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190910171748.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190911191952.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/classes/DoctrineMigrations.Version20190911191952.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller.ArticleAdminController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller.ArticleAdminController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller.ArticleController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller.ArticleController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller.CategoryController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller.CategoryController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller.CommentController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller.CommentController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller.RegisterController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller.RegisterController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller.SecurityController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller.SecurityController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller/ArticleAdminController.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller/ArticleAdminController.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller/ArticleController.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller/ArticleController.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller/CategoryController.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller/CategoryController.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller/CommentController.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller/CommentController.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller/RegisterController.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller/RegisterController.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Controller/SecurityController.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Controller/SecurityController.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.AbstractBaseFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.AbstractBaseFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.AppFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.AppFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.ArticleFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.ArticleFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.CategoryFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.CategoryFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.CommentFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.CommentFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.DataFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.DataFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.TagFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.TagFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures.UserFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures.UserFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures/AbstractBaseFixtures.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures/AbstractBaseFixtures.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures/AppFixtures.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures/AppFixtures.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures/ArticleFixtures.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures/ArticleFixtures.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures/CommentFixtures.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures/CommentFixtures.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/DataFixtures/DataFixtures.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/DataFixtures/DataFixtures.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity.Article.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity.Article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity.Category.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity.Category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity.Comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity.Comment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity.JustTesting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity.Tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity.Tag.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity.User.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity.User.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity/Article.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity/Article.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity/Category.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity/Category.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity/Comment.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity/Comment.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity/JustTesting.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity/Tag.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity/Tag.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Entity/User.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Entity/User.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form.ArticleType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form.ArticleType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form.CategoryType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form.CategoryType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form.CommentType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form.CommentType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form.TagType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form.TagType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form.UserTypeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form.UserTypeType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form/ArticleType.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form/ArticleType.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form/CategoryType.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form/CategoryType.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form/CommentType.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form/CommentType.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form/TagType.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form/TagType.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Form/UserTypeType.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Form/UserTypeType.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Kernel.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Kernel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Kernel.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Kernel.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Migrations.Version20190910170414.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Migrations.Version20190910170414.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Migrations.Version20190910171748.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Migrations.Version20190910171748.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Migrations.Version20190911191952.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Migrations.Version20190911191952.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Migrations/Version20190910170414.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Migrations/Version20190910170414.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Migrations/Version20190910171748.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Migrations/Version20190910171748.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Migrations/Version20190911191952.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Migrations/Version20190911191952.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository.ArticleRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository.ArticleRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository.CategoryRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository.CategoryRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository.CommentRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository.CommentRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository.JustTestingRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository.JustTestingRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository.TagRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository.TagRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository.UserRepository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository.UserRepository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository/ArticleRepository.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository/ArticleRepository.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository/CategoryRepository.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository/CategoryRepository.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository/CommentRepository.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository/CommentRepository.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository/JustTestingRepository.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository/JustTestingRepository.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository/TagRepository.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository/TagRepository.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Repository/UserRepository.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Repository/UserRepository.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Security.LoginFormAuthenticator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Security.LoginFormAuthenticator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Security/LoginFormAuthenticator.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Security/LoginFormAuthenticator.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Subscriber.LocaleSubscriber.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Subscriber.LocaleSubscriber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/files/Subscriber/LocaleSubscriber.php.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/files/Subscriber/LocaleSubscriber.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/graphs/class.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/graphs/class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/App.Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/App.Controller.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/App.DataFixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/App.DataFixtures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/App.Form.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/App.Form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/App.Repository.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/App.Repository.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/App.Subscriber.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/App.Subscriber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/DoctrineMigrations.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/DoctrineMigrations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/namespaces/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/namespaces/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-0b/phpdoc-cache-file_a417395892b3c156ffd53b1457b5b16b.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-0b/phpdoc-cache-file_a417395892b3c156ffd53b1457b5b16b.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-11/phpdoc-cache-file_686910fc8d9dc704008f7516abd222e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-11/phpdoc-cache-file_686910fc8d9dc704008f7516abd222e1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-16/phpdoc-cache-file_838ed6541408d4952146bcfe3bfa76e0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-16/phpdoc-cache-file_838ed6541408d4952146bcfe3bfa76e0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-1c/phpdoc-cache-file_1ef539f0989718f04ae0aef3e0cb2480.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-1c/phpdoc-cache-file_1ef539f0989718f04ae0aef3e0cb2480.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-1c/phpdoc-cache-file_55bcf17c71b44f79a9af14d81aacbf90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-1c/phpdoc-cache-file_55bcf17c71b44f79a9af14d81aacbf90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-29/phpdoc-cache-file_6bbf466e9e2adde56ebbfd666e1d32ab.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-29/phpdoc-cache-file_6bbf466e9e2adde56ebbfd666e1d32ab.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-2f/phpdoc-cache-file_47afc942f1b01f4f33b23c6810c8880e.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-2f/phpdoc-cache-file_47afc942f1b01f4f33b23c6810c8880e.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-31/phpdoc-cache-file_823170236010dce35bd5f92a246b7271.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-31/phpdoc-cache-file_823170236010dce35bd5f92a246b7271.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-48/phpdoc-cache-file_070a78c78b0da3ef868b9f6ffd339d7a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-49/phpdoc-cache-file_27b82fb0ed4e1d1b9608298fcb1a06dc.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-49/phpdoc-cache-file_27b82fb0ed4e1d1b9608298fcb1a06dc.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-4d/phpdoc-cache-file_75af4c6bd06b07db0f85114d740d619b.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-4d/phpdoc-cache-file_75af4c6bd06b07db0f85114d740d619b.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-4d/phpdoc-cache-file_8f1fab6570ef4df6df543acdc4269ad4.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-4d/phpdoc-cache-file_8f1fab6570ef4df6df543acdc4269ad4.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-65/phpdoc-cache-file_eebbe1b634f912b0d0d8b4059d5f2cf9.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-65/phpdoc-cache-file_eebbe1b634f912b0d0d8b4059d5f2cf9.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-66/phpdoc-cache-file_2b0874f4ea29f52e6fdad40fe5ac27fc.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-66/phpdoc-cache-file_2b0874f4ea29f52e6fdad40fe5ac27fc.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-66/phpdoc-cache-file_b8742486c21158ca06cdaf58a500ace8.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-66/phpdoc-cache-file_b8742486c21158ca06cdaf58a500ace8.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-6e/phpdoc-cache-file_ef0e01751ee35cba557d17d424ccec02.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-6e/phpdoc-cache-file_ef0e01751ee35cba557d17d424ccec02.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-73/phpdoc-cache-file_3baf10646ddfdb78bc674b91ed48f3c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-73/phpdoc-cache-file_3baf10646ddfdb78bc674b91ed48f3c1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-7d/phpdoc-cache-file_d122e639ac958001aeee73154ac73bbb.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-7d/phpdoc-cache-file_d122e639ac958001aeee73154ac73bbb.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-88/phpdoc-cache-file_7115148ec283527ed397bb5b3006c3fc.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-88/phpdoc-cache-file_7115148ec283527ed397bb5b3006c3fc.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-92/phpdoc-cache-file_c8c80d3fc2650edd66fc0df41bd8457f.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-92/phpdoc-cache-file_c8c80d3fc2650edd66fc0df41bd8457f.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-94/phpdoc-cache-file_0e3ad0729650cafac4b13b9add56547c.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-94/phpdoc-cache-file_0e3ad0729650cafac4b13b9add56547c.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-97/phpdoc-cache-file_a02a2289da78e9c88275c11133a59fe7.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-97/phpdoc-cache-file_a02a2289da78e9c88275c11133a59fe7.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-a8/phpdoc-cache-file_7085619c9caa4056a424ae21c7594ff7.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-a8/phpdoc-cache-file_7085619c9caa4056a424ae21c7594ff7.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-b7/phpdoc-cache-file_1d46f4d0b5a16288d0bf6f38dd71a368.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-b7/phpdoc-cache-file_1d46f4d0b5a16288d0bf6f38dd71a368.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-b8/phpdoc-cache-file_a99ce0e106a4afc77cf619af3238c57f.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-b8/phpdoc-cache-file_a99ce0e106a4afc77cf619af3238c57f.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-be/phpdoc-cache-file_20068079b9d3ed80d14a7f18b40e18c9.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-be/phpdoc-cache-file_20068079b9d3ed80d14a7f18b40e18c9.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-c9/phpdoc-cache-file_82ec205f68c3f58e0b374aab95fd4ac5.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-c9/phpdoc-cache-file_82ec205f68c3f58e0b374aab95fd4ac5.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-d3/phpdoc-cache-file_3e729f43505330f7380e38424124dae3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-d3/phpdoc-cache-file_3e729f43505330f7380e38424124dae3.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-d4/phpdoc-cache-file_041eec615705001f053dffa922e9937f.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-d4/phpdoc-cache-file_041eec615705001f053dffa922e9937f.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-e4/phpdoc-cache-file_f1591c87b8bef0615d759a7eeca90c36.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-e4/phpdoc-cache-file_f1591c87b8bef0615d759a7eeca90c36.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-e5/phpdoc-cache-file_c0f824cab0254fc7eee8bd4af9a60a4e.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-e5/phpdoc-cache-file_c0f824cab0254fc7eee8bd4af9a60a4e.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-f6/phpdoc-cache-file_651cc01ec4d54e543760713385365d37.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-f6/phpdoc-cache-file_651cc01ec4d54e543760713385365d37.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-f9/phpdoc-cache-file_565fdeee6d2ba94e68e6dfdee2e8adc2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-f9/phpdoc-cache-file_565fdeee6d2ba94e68e6dfdee2e8adc2.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpdoc-cache-fb/phpdoc-cache-file_471e452ac6a6f776da7924217c68ecda.dat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/phpdoc-cache-fb/phpdoc-cache-file_471e452ac6a6f776da7924217c68ecda.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/reports/deprecated.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reports/deprecated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/reports/errors.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reports/errors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/reports/markers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reports/markers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Controller.ArticleController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Controller.CommentController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Controller.RegisterController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Controller.SecurityController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.AbstractBaseFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.AppFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.ArticleFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.CategoryFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.CommentFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.DataFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.TagFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.DataFixtures.UserFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Form.ArticleType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Form.CategoryType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Form.CommentType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Form.TagType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Form.UserTypeType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Kernel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Repository.ArticleRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Repository.CategoryRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Repository.CommentRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Repository.JustTestingRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Repository.TagRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Repository.UserRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/App.Subscriber.LocaleSubscriber.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/DoctrineMigrations.Version20190910170414.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/DoctrineMigrations.Version20190910171748.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/classes/DoctrineMigrations.Version20190911191952.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/bootstrap-combined.no-icons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/jquery.iviewer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/Read Me.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.dev.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/lte-ie7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/phpdocumentor-clean-icons/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/prism.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/css/template.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller.ArticleAdminController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller.ArticleController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller.CategoryController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller.CommentController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller.RegisterController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller.SecurityController.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller/ArticleAdminController.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller/ArticleController.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller/CategoryController.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller/CommentController.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller/RegisterController.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Controller/SecurityController.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.AbstractBaseFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.AppFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.ArticleFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.CategoryFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.CommentFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.DataFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.TagFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures.UserFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/AbstractBaseFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/AppFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/ArticleFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/CategoryFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/CommentFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/DataFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/TagFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/DataFixtures/UserFixtures.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity.Article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity.Category.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity.Comment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity.JustTesting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity.Tag.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity.User.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity/Article.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity/Category.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity/Comment.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity/JustTesting.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity/Tag.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Entity/User.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form.ArticleType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form.CategoryType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form.CommentType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form.TagType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form.UserTypeType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form/ArticleType.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form/CategoryType.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form/CommentType.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form/TagType.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Form/UserTypeType.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Kernel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Kernel.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Migrations.Version20190910170414.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Migrations.Version20190910171748.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Migrations.Version20190911191952.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Migrations/Version20190910170414.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Migrations/Version20190910171748.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Migrations/Version20190911191952.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository.ArticleRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository.CategoryRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository.CommentRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository.JustTestingRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository.TagRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository.UserRepository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository/ArticleRepository.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository/CategoryRepository.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository/CommentRepository.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository/JustTestingRepository.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository/TagRepository.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Repository/UserRepository.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Security.LoginFormAuthenticator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Security/LoginFormAuthenticator.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Subscriber.LocaleSubscriber.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/files/Subscriber/LocaleSubscriber.php.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/font/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/font/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/font/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/font/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/font/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/graphs/class.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/apple-touch-icon-114x114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/apple-touch-icon-72x72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/custom-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/hierarchy-item.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/icon-class-13x13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/icon-class.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/icon-interface-13x13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/icon-interface.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/icon-trait-13x13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/icon-trait.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/grab.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/hand.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/iviewer.rotate_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/iviewer.rotate_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/iviewer.zoom_fit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/iviewer.zoom_in.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/iviewer.zoom_out.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/images/iviewer/iviewer.zoom_zero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/html5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery-1.11.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery.dotdotdot-1.5.9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery.dotdotdot-1.5.9.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery.iviewer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery.iviewer.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery.mousewheel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/jquery.smooth-scroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/prism.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/js/ui/1.10.4/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/App.Controller.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/App.DataFixtures.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/App.Form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/App.Repository.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/App.Subscriber.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/App.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/DoctrineMigrations.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/namespaces/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-0b/phpdoc-cache-file_a417395892b3c156ffd53b1457b5b16b.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-11/phpdoc-cache-file_686910fc8d9dc704008f7516abd222e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-16/phpdoc-cache-file_838ed6541408d4952146bcfe3bfa76e0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-1c/phpdoc-cache-file_1ef539f0989718f04ae0aef3e0cb2480.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-1c/phpdoc-cache-file_55bcf17c71b44f79a9af14d81aacbf90.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-29/phpdoc-cache-file_6bbf466e9e2adde56ebbfd666e1d32ab.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-2e/phpdoc-cache-settings.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-2f/phpdoc-cache-file_47afc942f1b01f4f33b23c6810c8880e.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-2f/phpdoc-cache-file_5db4096a176a8756197f1d9eca3cf1aa.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-31/phpdoc-cache-file_823170236010dce35bd5f92a246b7271.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-41/phpdoc-cache-file_63d8723be6f532482f18813bab28aa15.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-48/phpdoc-cache-file_070a78c78b0da3ef868b9f6ffd339d7a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-49/phpdoc-cache-file_27b82fb0ed4e1d1b9608298fcb1a06dc.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-4d/phpdoc-cache-file_75af4c6bd06b07db0f85114d740d619b.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-4d/phpdoc-cache-file_8f1fab6570ef4df6df543acdc4269ad4.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-65/phpdoc-cache-file_eebbe1b634f912b0d0d8b4059d5f2cf9.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-66/phpdoc-cache-file_2b0874f4ea29f52e6fdad40fe5ac27fc.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-66/phpdoc-cache-file_b8742486c21158ca06cdaf58a500ace8.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-6e/phpdoc-cache-file_ef0e01751ee35cba557d17d424ccec02.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-73/phpdoc-cache-file_3baf10646ddfdb78bc674b91ed48f3c1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-7d/phpdoc-cache-file_d122e639ac958001aeee73154ac73bbb.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-88/phpdoc-cache-file_7115148ec283527ed397bb5b3006c3fc.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-92/phpdoc-cache-file_c8c80d3fc2650edd66fc0df41bd8457f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-94/phpdoc-cache-file_0e3ad0729650cafac4b13b9add56547c.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-97/phpdoc-cache-file_a02a2289da78e9c88275c11133a59fe7.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-a3/phpdoc-cache-file_4a785f6c512b87cac39bf215706a0cc3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-a8/phpdoc-cache-file_7085619c9caa4056a424ae21c7594ff7.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-b7/phpdoc-cache-file_1d46f4d0b5a16288d0bf6f38dd71a368.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-b8/phpdoc-cache-file_a99ce0e106a4afc77cf619af3238c57f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-be/phpdoc-cache-file_20068079b9d3ed80d14a7f18b40e18c9.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-c9/phpdoc-cache-file_82ec205f68c3f58e0b374aab95fd4ac5.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-d3/phpdoc-cache-file_3e729f43505330f7380e38424124dae3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-d4/phpdoc-cache-file_041eec615705001f053dffa922e9937f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-e4/phpdoc-cache-file_f1591c87b8bef0615d759a7eeca90c36.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-e5/phpdoc-cache-file_c0f824cab0254fc7eee8bd4af9a60a4e.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-f6/phpdoc-cache-file_651cc01ec4d54e543760713385365d37.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-f9/phpdoc-cache-file_565fdeee6d2ba94e68e6dfdee2e8adc2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/phpdoc-cache-fb/phpdoc-cache-file_471e452ac6a6f776da7924217c68ecda.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/reports/deprecated.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/reports/errors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docsaktualizacja/reports/markers.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -411,7 +69,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/codesniffer.txt">
+        <entry file="file://$PROJECT_DIR$/app/codesniffer2.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
@@ -742,74 +400,6 @@
             </path>
             <path>
               <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="Descriptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gazeta" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phpDocumentor" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gazeta" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -914,12 +504,12 @@
       <workItem from="1568443945203" duration="25418000" />
       <workItem from="1568476017045" duration="44000" />
       <workItem from="1568478231304" duration="16993000" />
-      <workItem from="1568521108822" duration="15227000" />
+      <workItem from="1568521108822" duration="16442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="679493000" />
+    <option name="totallyTimeSpent" value="680708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1032,13 +622,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/article/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="41" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/article/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1239,7 +822,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/nazwa.txt">
+    <entry file="file://$PROJECT_DIR$/app/codesniffer1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3961">
           <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
@@ -1436,12 +1019,15 @@
     <entry file="file://$PROJECT_DIR$/app/codesnifferaktualizacja.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/codesniffer.txt">
+    <entry file="file://$PROJECT_DIR$/app/codesniffer2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/run">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Entity/Tag.php">
       <provider selected="true" editor-type-id="text-editor">

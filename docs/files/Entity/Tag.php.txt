@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * TagEntity created with maker.
+ */
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
