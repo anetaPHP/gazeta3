@@ -167,9 +167,9 @@ class Article
     /**
      * Getter for Subtitle.
      *
-     * @return string|null Subtitle
+     * @return string|null
      */
-    public function getSubtitle(): string
+    public function getSubtitle(): ?string
     {
         return $this->subtitle;
     }
@@ -177,9 +177,11 @@ class Article
     /**
      * Setter for Subtitle.
      *
-     * @param string $subtitle subtitle
+     * @param string|null $subtitle
+     *
+     * @return Article
      */
-    public function setSubtitle(string $subtitle): self
+    public function setSubtitle(?string $subtitle): self
     {
         $this->subtitle = $subtitle;
 
