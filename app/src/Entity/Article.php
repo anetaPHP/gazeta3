@@ -143,9 +143,9 @@ class Article
     /**
      * Getter for Title.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -153,11 +153,11 @@ class Article
     /**
      * Setter for Title.
      *
-     * @param string $title Title
+     * @param string|null $title
      *
      * @return Article
      */
-    public function setTitle(string $title): self
+    public function setTitle(?string $title): self
     {
         $this->title = $title;
 

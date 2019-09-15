@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d5e056-0a94-4d61-9a1c-c4852c9a723f" name="Default Changelist" comment="project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,11 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/Entity/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="953">
-              <caret line="155" column="3" lean-forward="true" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
-              <folding>
-                <element signature="e#57#105#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="146" column="7" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -134,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/Entity/Tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-496">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
               <folding>
                 <element signature="e#6#46#0#PHP" expanded="true" />
               </folding>
@@ -182,9 +179,9 @@
       <find>68</find>
       <find>?</find>
       <find>Asse</find>
-      <find>Asser</find>
       <find>pass</find>
       <find>view</find>
+      <find>Asser</find>
     </findStrings>
     <replaceStrings>
       <replace>article</replace>
@@ -253,15 +250,15 @@
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190910171748.php" />
         <option value="$PROJECT_DIR$/app/src/Migrations/Version20190910170414.php" />
         <option value="$PROJECT_DIR$/app/src/Security/LoginFormAuthenticator.php" />
-        <option value="$PROJECT_DIR$/app/src/Entity/Tag.php" />
         <option value="$PROJECT_DIR$/app/templates/admrights/admini.html.twig" />
         <option value="$PROJECT_DIR$/app/src/Controller/CategoryController.php" />
         <option value="$PROJECT_DIR$/app/src/Entity/Comment.php" />
         <option value="$PROJECT_DIR$/app/src/Entity/Category.php" />
-        <option value="$PROJECT_DIR$/app/src/Entity/Article.php" />
         <option value="$PROJECT_DIR$/app/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/src/Controller/ArticleAdminController.php" />
         <option value="$PROJECT_DIR$/app/src/Controller/ArticleController.php" />
+        <option value="$PROJECT_DIR$/app/src/Entity/Tag.php" />
+        <option value="$PROJECT_DIR$/app/src/Entity/Article.php" />
       </list>
     </option>
   </component>
@@ -534,12 +531,12 @@
       <workItem from="1568443945203" duration="25418000" />
       <workItem from="1568476017045" duration="44000" />
       <workItem from="1568478231304" duration="16993000" />
-      <workItem from="1568521108822" duration="23540000" />
+      <workItem from="1568521108822" duration="23843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="687806000" />
+    <option name="totallyTimeSpent" value="688109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1011,16 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/Entity/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#46#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1061,13 +1048,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/Entity/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Entity/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="953">
-          <caret line="155" column="3" lean-forward="true" selection-start-line="155" selection-start-column="3" selection-end-line="155" selection-end-column="3" />
-          <folding>
-            <element signature="e#57#105#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="146" column="7" selection-start-line="146" selection-start-column="6" selection-end-line="146" selection-end-column="7" />
         </state>
       </provider>
     </entry>
