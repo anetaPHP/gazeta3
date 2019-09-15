@@ -104,4 +104,25 @@ class ArticleController extends AbstractController
                 'form' => $form->createView(), ]
         );
     }
+
+    /**
+     * View AboutProject Action.
+     *
+     * @param ArticleRepository $repository
+     *
+     * @return Response
+     *
+     * @Route(
+     *     "/ostronie",
+     *     name="o_stronie",
+     * )
+     */
+    public function ostronie (ArticleRepository $repository): Response
+    {
+        return $this->render(
+            'info/ostronie.html.twig',
+            ['repo' => $repository]
+        );
+    }
+
 }
