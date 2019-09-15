@@ -54,7 +54,9 @@ class Article
      * Subtitle.
      *
      * @var string
+     *
      * @ORM\Column(type="string", length=180, nullable=true)
+     *
      * @Assert\NotBlank()
      */
     private $subtitle;
@@ -63,6 +65,7 @@ class Article
      * Created at.
      *
      * @var \DateTime
+     *
      * @ORM\Column(type="datetime")
      *
      * @Gedmo\Timestampable(on="create")
@@ -73,6 +76,7 @@ class Article
      * Slug.
      *
      * @var string
+     *
      * @ORM\Column(type="string", length=100)
      */
     private $slug;
@@ -139,7 +143,7 @@ class Article
     /**
      * Getter for Title.
      *
-     * @return string|null Title
+     * @return string
      */
     public function getTitle(): string
     {
@@ -150,6 +154,8 @@ class Article
      * Setter for Title.
      *
      * @param string $title Title
+     *
+     * @return Article
      */
     public function setTitle(string $title): self
     {
