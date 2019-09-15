@@ -202,6 +202,8 @@ class Article
      * Setter for Created at.
      *
      * @param \DateTimeInterface $createdAt Created at
+     *
+     * @return Article
      */
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
@@ -259,9 +261,9 @@ class Article
     /**
      * Getter for Category.
      *
-     * @return Category
+     * @return Category|null
      */
-    public function getCategory(): Category
+    public function getCategory(): ?Category
     {
         return $this->category;
     }
@@ -273,7 +275,7 @@ class Article
      *
      * @return Article
      */
-    public function setCategory(Category $category): self
+    public function setCategory(?Category $category): self
     {
         $this->category = $category;
 
