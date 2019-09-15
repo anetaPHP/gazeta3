@@ -79,7 +79,7 @@ class Comment
      *
      * @return string|null Content
      */
-    public function getContent(): string
+    public function getContent(): ?string
     {
         return $this->content;
     }

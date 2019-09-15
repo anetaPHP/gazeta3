@@ -72,9 +72,9 @@ class Category
     /**
      * Getter for Name.
      *
-     * @return string|null Name
+     * @return string Name
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
