@@ -117,12 +117,11 @@ class ArticleController extends AbstractController
      *     name="o_stronie",
      * )
      */
-    public function ostronie (ArticleRepository $repository): Response
+    public function ostronie(ArticleRepository $repository): Response
     {
         return $this->render(
             'info/ostronie.html.twig',
             ['repo' => $repository]
         );
     }
-
 }

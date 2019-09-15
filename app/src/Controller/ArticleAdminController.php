@@ -24,8 +24,8 @@ class ArticleAdminController extends AbstractController
     /**
      * StrAdmin.
      *
-     * @param Request $request
-     * @param ArticleRepository $repository
+     * @param Request            $request
+     * @param ArticleRepository  $repository
      * @param PaginatorInterface $paginator
      *
      * @return Response
@@ -47,7 +47,7 @@ class ArticleAdminController extends AbstractController
 
     /**
      * New Action Article.
-     * @param Request $request
+     * @param Request           $request
      * @param ArticleRepository $repository
      *
      * @return Response
@@ -73,7 +73,7 @@ class ArticleAdminController extends AbstractController
 //            $article->setTitle($data);
 //            $article->setSubtitle($data);
             $article->setCreatedAt((new \DateTime()));
-            $article->setSlug('title' . rand(100, 900));
+            $article->setSlug('title'.rand(100, 900));
             $article->setUser($this->getUser());
 
             $repository->save($article);
@@ -92,8 +92,8 @@ class ArticleAdminController extends AbstractController
     /**
      * Edit Article Action.
      *
-     * @param Request $request
-     * @param Article $article
+     * @param Request           $request
+     * @param Article           $article
      * @param ArticleRepository $repository
      *
      * @return Response
@@ -154,5 +154,4 @@ class ArticleAdminController extends AbstractController
 
         return $this->redirectToRoute('app_admini');
     }
-
 }
