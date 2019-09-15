@@ -106,13 +106,11 @@ class User implements UserInterface
     }
 
     /**
-     * Getter fo Login name.
+     * Getter for Login name.
      *
-     * @see UserInterface
-     *
-     * @return string
+     * @return string|null
      */
-    public function getLoginname(): string
+    public function getLoginname(): ?string
     {
         return $this->loginname;
     }
