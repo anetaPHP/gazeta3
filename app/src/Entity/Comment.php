@@ -10,8 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class Comment
- * @package App\Entity
+ * Class Comment.
  *
  * @ORM\Entity(repositoryClass="App\Repository\CommentRepository")
  * @ORM\Table(name="comment")
@@ -21,7 +20,7 @@ class Comment
     /**
      * Use constants to define configuration options that rarely change instead
      * of specifying them in app/config/config.yml.
-     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options
+     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options.
      *
      * @constant int NUMBER_OF_ITEMS
      */
@@ -42,7 +41,9 @@ class Comment
      * Content.
      *
      * @var string
+     *
      * @ORM\Column(type="string", length=180)
+     *
      * @Assert\NotBlank()
      */
     private $content;
@@ -56,7 +57,7 @@ class Comment
     private $author;
 
     /**
-     * Aticle.
+     * Article.
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\Article", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
@@ -68,7 +69,7 @@ class Comment
      *
      * @return int|null Id
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -78,7 +79,7 @@ class Comment
      *
      * @return string|null Content
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -87,6 +88,8 @@ class Comment
      * Setter for Content.
      *
      * @param string $content content
+     *
+     * @return Comment
      */
     public function setContent(string $content): self
     {
@@ -98,9 +101,9 @@ class Comment
     /**
      * Getter for Author.
      *
-     * @return string|null Author
+     * @return User Author
      */
-    public function getAuthor(): ?User
+    public function getAuthor(): User
     {
         return $this->author;
     }
@@ -108,9 +111,11 @@ class Comment
     /**
      * Setter for Author.
      *
-     * @param string $author Author
+     * @param User $author Author
+     *
+     * @return Comment
      */
-    public function setAuthor(?User $author): self
+    public function setAuthor(User $author): self
     {
         $this->author = $author;
 
@@ -122,7 +127,7 @@ class Comment
      *
      * @return Article|null
      */
-    public function getArticle(): ?Article
+    public function getArticle(): Article
     {
         return $this->article;
     }
@@ -134,7 +139,7 @@ class Comment
      *
      * @return Comment
      */
-    public function setArticle(?Article $article): self
+    public function setArticle(Article $article): self
     {
         $this->article = $article;
 

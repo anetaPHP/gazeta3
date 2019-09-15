@@ -1,17 +1,13 @@
 <?php
 /**
- * ArticleAdminController
- * @author Aneta Satława
- * @package App\Controller
+ * ArticleAdminController.
  */
 
 namespace App\Controller;
 
 use App\Entity\Article;
-use App\Entity\Comment;
 use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
-use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,21 +15,24 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class ArticleAdminController
+ * Class ArticleAdminController.
+ *
  * @Route("admrights")
  */
 class ArticleAdminController extends AbstractController
 {
     /**
-     * Stronaadm page with paginator.
+     * StrAdmin.
      *
-     * @param Request $request
-     * @param ArticleRepository $repository
+     * @param Request            $request
+     * @param ArticleRepository  $repository
      * @param PaginatorInterface $paginator
+     *
      * @return Response
+     *
      * @Route("/", name="app_admini")
      */
-    public function stronaadm(Request $request, ArticleRepository $repository, PaginatorInterface $paginator): Response
+    public function strAdmin(Request $request, ArticleRepository $repository, PaginatorInterface $paginator): Response
     {
         $pags = $paginator->paginate(
             $repository->queryAll(),
@@ -47,11 +46,12 @@ class ArticleAdminController extends AbstractController
     }
 
     /**
-     * New Article Action.
-     *
-     * @param Request $request
+     * New Action Article.
+     * @param Request           $request
      * @param ArticleRepository $repository
+     *
      * @return Response
+     *
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -61,7 +61,7 @@ class ArticleAdminController extends AbstractController
      *     name="article_new",
      * )
      */
-    public function new(Request $request, ArticleRepository $repository): Response
+    public function articleNew(Request $request, ArticleRepository $repository): Response
     {
         $article = new Article();
         $form = $this->createForm(ArticleType::class, $article);
@@ -72,8 +72,8 @@ class ArticleAdminController extends AbstractController
 //            $article =new Article();
 //            $article->setTitle($data);
 //            $article->setSubtitle($data);
-            $article->setCreatedAt(new \DateTime());
-            $article->setSlug('title' . rand(100, 900));
+            $article->setCreatedAt((new \DateTime()));
+            $article->setSlug('title'.rand(100, 900));
             $article->setUser($this->getUser());
 
             $repository->save($article);
@@ -92,10 +92,12 @@ class ArticleAdminController extends AbstractController
     /**
      * Edit Article Action.
      *
-     * @param Request $request
-     * @param Article $article
+     * @param Request           $request
+     * @param Article           $article
      * @param ArticleRepository $repository
+     *
      * @return Response
+     *
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -108,7 +110,6 @@ class ArticleAdminController extends AbstractController
      */
     public function edit(Request $request, Article $article, ArticleRepository $repository): Response
     {
-
         $form = $this->createForm(ArticleType::class, $article, ['method' => 'PUT']);
         $form->handleRequest($request);
 
@@ -129,11 +130,11 @@ class ArticleAdminController extends AbstractController
         );
     }
 
-
     /**
      * Delete Article Action.
      *
      * @param $id
+     *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      *
      * @Route("/{id}/delete",
@@ -150,13 +151,15 @@ class ArticleAdminController extends AbstractController
         $em->remove($comment);
         $em->flush();
         $this->addFlash('success', 'Artykuł został usunięty!');
-        return $this->redirectToRoute("app_admini");
-    }
 
+        return $this->redirectToRoute('app_admini');
+    }
 
     /**
      * View AboutProject Action.
+     *
      * @param ArticleRepository $repository
+     *
      * @return Response
      *
      * @Route(

@@ -1,13 +1,10 @@
 <?php
 /**
- * CategoryController
- * @author Aneta Satława
- * @package App\Controller
+ * CategoryController.
  */
 
 namespace App\Controller;
 
-use App\Entity\Article;
 use App\Entity\Category;
 use App\Form\CategoryType;
 use App\Repository\CategoryRepository;
@@ -18,9 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class CategoryController
- *
- * @package App\Controller
+ * Class CategoryController.
  *
  * @Route("/admrights/category")
  */
@@ -29,9 +24,10 @@ class CategoryController extends AbstractController
     /**
      * Index CategoryMenu Action.
      *
-     * @param Request $request
+     * @param Request            $request
      * @param CategoryRepository $repository
      * @param PaginatorInterface $paginator
+     *
      * @return Response
      *
      * @Route(
@@ -46,6 +42,7 @@ class CategoryController extends AbstractController
             $request->query->getInt('page', 1),
             Category::NUMBER_OF_ITEMS
         );
+
         return $this->render(
             'category/index.html.twig',
             ['categorypag' => $categorypag]
@@ -55,9 +52,11 @@ class CategoryController extends AbstractController
     /**
      * New Action Category.
      *
-     * @param Request $request
+     * @param Request            $request
      * @param CategoryRepository $repository
+     *
      * @return Response
+     *
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -67,7 +66,7 @@ class CategoryController extends AbstractController
      *     name="category_new",
      * )
      */
-    public function new(Request $request, CategoryRepository $repository): Response
+    public function categoryNew(Request $request, CategoryRepository $repository): Response
     {
         $category = new Category();
         $form = $this->createForm(CategoryType::class, $category);
@@ -90,10 +89,12 @@ class CategoryController extends AbstractController
     /**
      * Edit Action Category.
      *
-     * @param Request $request
-     * @param Category $category
+     * @param Request            $request
+     * @param Category           $category
      * @param CategoryRepository $repository
+     *
      * @return Response
+     *
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      *
@@ -126,12 +127,11 @@ class CategoryController extends AbstractController
         );
     }
 
-
     /**
-     *
      * Delete Action Category.
      *
      * @param $id
+     *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      *
      * @Route("/{id}/delete",
@@ -146,14 +146,16 @@ class CategoryController extends AbstractController
             ->find($id);
         $em = $this->getDoctrine()->getManager();
 
-        if ($category->getArticle()->count() == 0) {
+        if (0 == $category->getArticle()->count()) {
             $em->remove($category);
             $em->flush();
             $this->addFlash('success', 'Kategoria została usunięta!');
-            return $this->redirectToRoute("category_index");
+
+            return $this->redirectToRoute('category_index');
         } else {
             $this->addFlash('danger', 'Kategoria jest jeszcze używana. Można usuwać tylko puste kategorie!');
-            return $this->redirectToRoute("category_index");
+
+            return $this->redirectToRoute('category_index');
         }
     }
 }

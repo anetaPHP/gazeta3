@@ -1,4 +1,7 @@
 <?php
+/**
+ * CommentRepository PHPProjectSatlawa
+ */
 
 namespace App\Repository;
 
@@ -10,6 +13,9 @@ use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
+ * Class CommentRepository
+ * @package App\Repository
+ *
  * @method Comment|null find($id, $lockMode = null, $lockVersion = null)
  * @method Comment|null findOneBy(array $criteria, array $orderBy = null)
  * @method Comment[]    findAll()
@@ -38,6 +44,11 @@ class CommentRepository extends ServiceEntityRepository
             ->orderBy('c.id', 'DESC');
     }
 
+    /**
+     * QueryForArticle Action OrderNewestId
+     * @param Article $article
+     * @return QueryBuilder
+     */
     public function queryForArticle(Article $article): QueryBuilder
     {
         return $this->getOrCreateQueryBuilder()
@@ -58,27 +69,10 @@ class CommentRepository extends ServiceEntityRepository
         return $queryBuilder ?: $this->createQueryBuilder('c');
     }
 
-    // /**
-    //  * @return Comment[] Returns an array of Comment objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-
     /**
-     * Delete record.
+     * Delete Record.
      *
-     * @param \App\Entity\Comment $comment Comment entity
-     *
+     * @param Comment $comment
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      */

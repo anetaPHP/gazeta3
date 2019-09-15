@@ -12,8 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class User
- * @package App\Entity
+ * Class User.
  *
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  *
@@ -65,6 +64,7 @@ class User implements UserInterface
      * Loginname.
      *
      * @var string
+     *
      * @ORM\Column(type="string", length=40)
      *
      * @Assert\NotBlank
@@ -100,18 +100,19 @@ class User implements UserInterface
      *
      * @return int|null Result
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
 
-    /*
+    /**
+     * Getter fo Login name.
      *
      * @see UserInterface
      *
-     * @return string Loginname loginnname
+     * @return string
      */
-    public function getLoginname(): ?string
+    public function getLoginname(): string
     {
         return $this->loginname;
     }
@@ -119,7 +120,7 @@ class User implements UserInterface
     /**
      * Setter for the Login Name.
      *
-     * @param string $loginname Loginname
+     * @param string $loginname
      */
     public function setLoginname(string $loginname): void
     {
@@ -130,12 +131,12 @@ class User implements UserInterface
      * {@inheritdoc}
      *
      * @return string User name
-     * @see UserInterface
      *
+     * @see UserInterface
      */
     public function getUsername(): string
     {
-        return (string)$this->loginname;
+        return (string) $this->loginname;
     }
 
     /**
@@ -143,7 +144,7 @@ class User implements UserInterface
      *
      * @return string|null Password
      */
-    public function getPassword(): ?string
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -183,6 +184,8 @@ class User implements UserInterface
     }
 
     /**
+     * Has Role.
+     *
      * @param $role
      *
      * @return bool
@@ -198,6 +201,8 @@ class User implements UserInterface
     }
 
     /**
+     * Getter for Salt.
+     *
      * @see UserInterface
      */
     public function getSalt()
@@ -206,6 +211,7 @@ class User implements UserInterface
     }
 
     /**
+     * Erase Credentials.
      * @see UserInterface
      */
     public function eraseCredentials()

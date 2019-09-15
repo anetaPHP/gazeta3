@@ -12,9 +12,8 @@ use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class Article
- * @package App\Entity
- * *
+ * Class Article.
+ *
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  * @ORM\Table(name="article")
  */
@@ -23,7 +22,7 @@ class Article
     /**
      * Use constants to define configuration options that rarely change instead
      * of specifying them in app/config/config.yml.
-     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options
+     * See http://symfony.com/doc/current/best_practices/configuration.html#constants-vs-configuration-options.
      *
      * @constant int NUMBER_OF_ITEMS
      */
@@ -92,7 +91,6 @@ class Article
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="article")
      * @ORM\JoinColumn(nullable=true, onDelete="CASCADE")
-     *
      */
     private $category;
 
@@ -119,6 +117,9 @@ class Article
      */
     private $content;
 
+    /**
+     * Article constructor.
+     */
     public function __construct()
     {
         $this->tag = new ArrayCollection();
@@ -130,7 +131,7 @@ class Article
      *
      * @return int|null Id
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -140,7 +141,7 @@ class Article
      *
      * @return string|null Title
      */
-    public function getTitle(): ?string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -162,7 +163,7 @@ class Article
      *
      * @return string|null Subtitle
      */
-    public function getSubtitle(): ?string
+    public function getSubtitle(): string
     {
         return $this->subtitle;
     }
@@ -184,7 +185,7 @@ class Article
      *
      * @return int|null Id
      */
-    public function getCreatedAt(): ?\DateTimeInterface
+    public function getCreatedAt(): \DateTimeInterface
     {
         return $this->createdAt;
     }
@@ -206,7 +207,7 @@ class Article
      *
      * @return string|null Slug
      */
-    public function getSlug(): ?string
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -228,7 +229,7 @@ class Article
      *
      * @return User|null
      */
-    public function getUser(): ?User
+    public function getUser(): User
     {
         return $this->user;
     }
@@ -236,11 +237,11 @@ class Article
     /**
      * Setter for User.
      *
-     * @param User|null $user
+     * @param User $user
      *
      * @return Article
      */
-    public function setUser(?User $user): self
+    public function setUser(User $user): self
     {
         $this->user = $user;
 
@@ -250,9 +251,9 @@ class Article
     /**
      * Getter for Category.
      *
-     * @return Category|null
+     * @return Category
      */
-    public function getCategory(): ?Category
+    public function getCategory(): Category
     {
         return $this->category;
     }
@@ -264,7 +265,7 @@ class Article
      *
      * @return Article
      */
-    public function setCategory(?Category $category): self
+    public function setCategory(Category $category): self
     {
         $this->category = $category;
 
@@ -365,7 +366,7 @@ class Article
      *
      * @return string|null
      */
-    public function getContent(): ?string
+    public function getContent(): string
     {
         return $this->content;
     }

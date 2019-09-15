@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 /**
- * Summary Migration
+ * Summary Migration.
  */
 
 namespace DoctrineMigrations;
 
+use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
@@ -16,7 +17,7 @@ use Doctrine\Migrations\AbstractMigration;
 final class Version20190910170414 extends AbstractMigration
 {
     /**
-     * GetDescription
+     * GetDescription.
      *
      * @return string
      */
@@ -26,12 +27,12 @@ final class Version20190910170414 extends AbstractMigration
     }
 
     /**
-     * UP Schema
+     * Upp Schema.
      * @param Schema $schema
      *
-     * @throws \Doctrine\DBAL\DBALException
+     * @throws DBALException
      */
-    public function up(Schema $schema): void
+    public function upp(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf(
@@ -80,7 +81,7 @@ final class Version20190910170414 extends AbstractMigration
      *
      * @param Schema $schema
      *
-     * @throws \Doctrine\DBAL\DBALException
+     * @throws DBALException
      */
     public function down(Schema $schema): void
     {
@@ -103,5 +104,14 @@ final class Version20190910170414 extends AbstractMigration
         $this->addSql('DROP TABLE justtesting');
         $this->addSql('DROP TABLE tag');
         $this->addSql('DROP TABLE user');
+    }
+
+    /**
+     * Up Action.
+     * @param Schema $schema
+     */
+    public function up(Schema $schema): void
+    {
+        // TODO: Implement up() method.
     }
 }

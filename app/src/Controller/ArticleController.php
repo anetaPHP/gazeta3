@@ -1,6 +1,6 @@
 <?php
 /**
- * ArticleController.
+ * ArticleController by Aneta Satlawa.
  */
 
 namespace App\Controller;
@@ -22,17 +22,17 @@ use Symfony\Component\HttpFoundation\Request;
 class ArticleController extends AbstractController
 {
     /**
-     * Action Homepage Articlelist.
+     * Action Homepage Article.
      *
      * @param Request            $request
-     * @param ArticleRepository  $repository
      * @param PaginatorInterface $paginator
+     * @param ArticleRepository  $repository
      *
      * @return Response
      *
      * @Route("/", name="app_stronastartowa")
      */
-    public function stronastartowa(
+    public function homepage(
         Request $request,
         PaginatorInterface $paginator,
         ArticleRepository $repository

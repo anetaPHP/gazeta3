@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * ArticleRepository ProjectPHPSatlawa
+ */
+
 namespace App\Repository;
 
 use App\Entity\Article;
@@ -9,6 +13,9 @@ use Doctrine\Common\Persistence\ManagerRegistry;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
+ * Class ArticleRepository
+ * @package App\Repository
+ *
  * @method Article|null find($id, $lockMode = null, $lockVersion = null)
  * @method Article|null findOneBy(array $criteria, array $orderBy = null)
  * @method Article[]    findAll()
@@ -63,8 +70,7 @@ class ArticleRepository extends ServiceEntityRepository
             ->andWhere('a.id IS NOT NULL')
             ->orderBy('a.createdAt', 'DESC')
             ->getQuery()
-            ->getResult()
-            ;
+            ->getResult();
     }
 
     /**

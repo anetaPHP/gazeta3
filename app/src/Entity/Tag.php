@@ -1,8 +1,7 @@
 <?php
 /**
- * Tag entity.
+ * TagEntity created with maker.
  */
-
 namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -10,8 +9,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class Tag
- * @package App\Entity
+ * Class Tag.
  *
  * @ORM\Entity(repositoryClass="App\Repository\TagRepository")
  * @ORM\Table(name="tag")
@@ -22,6 +20,7 @@ class Tag
      * Primary key.
      *
      * @var int
+     *
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
@@ -42,6 +41,9 @@ class Tag
      */
     private $articles;
 
+    /**
+     * Tag constructor.
+     */
     public function __construct()
     {
         $this->article = new ArrayCollection();
@@ -53,7 +55,7 @@ class Tag
      *
      * @return int|null Id
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -61,9 +63,9 @@ class Tag
     /**
      * Getter for Name.
      *
-     * @return string|null Name
+     * @return string
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -72,6 +74,8 @@ class Tag
      * Setter for Name.
      *
      * @param string $name Name
+     *
+     * @return Tag
      */
     public function setName(string $name): self
     {
@@ -81,7 +85,9 @@ class Tag
     }
 
     /**
-     * @return Collection|Article[]
+     * Getter for Articles.
+     *
+     * @return Collection
      */
     public function getArticles(): Collection
     {

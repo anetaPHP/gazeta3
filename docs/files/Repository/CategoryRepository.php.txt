@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * CategoryRepository ProjktPHPSatlawa
+ */
+
 namespace App\Repository;
 
 use App\Entity\Category;
@@ -8,6 +12,9 @@ use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\ORM\QueryBuilder;
 
 /**
+ * Class CategoryRepository
+ * @package App\Repository
+ *
  * @method Category|null find($id, $lockMode = null, $lockVersion = null)
  * @method Category|null findOneBy(array $criteria, array $orderBy = null)
  * @method Category[]    findAll()
@@ -88,14 +95,15 @@ class CategoryRepository extends ServiceEntityRepository
     }
 
     /**
+     * QueryAll Action CategoryOrderbyIdNewest
+     *
      * @return QueryBuilder
      */
     public function queryAll(): QueryBuilder
     {
         return $this->getOrCreateQueryBuilder()
             ->orderBy('k.id', 'DESC')
-            ->andWhere('k.id IS NOT NULL')
-            ;
+            ->andWhere('k.id IS NOT NULL');
     }
 
     /**

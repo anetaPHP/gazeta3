@@ -51,6 +51,9 @@ class Category
      */
     private $article;
 
+    /**
+     * Category constructor.
+     */
     public function __construct()
     {
         $this->article = new ArrayCollection();
@@ -61,7 +64,7 @@ class Category
      *
      * @return int|null Id
      */
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -71,7 +74,7 @@ class Category
      *
      * @return string|null Name
      */
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }

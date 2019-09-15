@@ -1,0 +1,23 @@
+
+[1mFILE: src\Controller\CategoryController.php[0m
+----------------------------------------------------------------------
+[1mFOUND 2 ERRORS AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 65 | [31mERROR[0m | [ ] Expected "function abc(...)"; found "function abc
+    |       |     (...)"
+ 65 | [31mERROR[0m | [x] Expected 0 spaces before opening parenthesis; 1
+    |       |     found
+----------------------------------------------------------------------
+[1mPHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY[0m
+----------------------------------------------------------------------
+
+
+[1mFILE: src\Security\LoginFormAuthenticator.php[0m
+----------------------------------------------------------------------
+[1mFOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE[0m
+----------------------------------------------------------------------
+ 62 | [33mWARNING[0m | Line exceeds 120 characters; contains 124 characters
+----------------------------------------------------------------------
+
+Time: 432ms; Memory: 8MB
+

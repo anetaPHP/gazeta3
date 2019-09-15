@@ -1,4 +1,7 @@
 <?php
+/**
+ * JustTesting not used.
+ */
 
 namespace App\Repository;
 
@@ -7,6 +10,8 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
+ * Class JustTestingRepository
+ * @package App\Repository
  * @method JustTesting|null find($id, $lockMode = null, $lockVersion = null)
  * @method JustTesting|null findOneBy(array $criteria, array $orderBy = null)
  * @method JustTesting[]    findAll()
@@ -14,6 +19,11 @@ use Doctrine\Common\Persistence\ManagerRegistry;
  */
 class JustTestingRepository extends ServiceEntityRepository
 {
+    /**
+     * JustTestingRepository constructor.
+     * @param ManagerRegistry $registry
+     *
+     */
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, JustTesting::class);

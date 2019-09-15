@@ -13,8 +13,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class SecurityController
- * @package App\Controller
+ * Class SecurityController.
  */
 class SecurityController extends AbstractController
 {
@@ -22,6 +21,7 @@ class SecurityController extends AbstractController
      * SetLanguage Action.
      *
      * @param Request $request
+     *
      * @return RedirectResponse
      *
      * @Route("/set-language/{_locale}", name="set_language")
@@ -33,6 +33,7 @@ class SecurityController extends AbstractController
         if ($referer) {
             return new RedirectResponse($referer);
         }
+
         return $this->redirectToRoute('app_stronastartowa');
     }
 
@@ -40,6 +41,7 @@ class SecurityController extends AbstractController
      * LoginForm Action.
      *
      * @param AuthenticationUtils $authenticationUtils
+     *
      * @return Response
      *
      * @Route(
